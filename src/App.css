@@ -1,0 +1,29 @@
+@font-face {
+    font-family: "rethink-sans";
+    src: url('assets/fonts/RethinkSans-ExtraBold.ttf') format('truetype');
+}
+
+:root{
+    --color-primary: #328AB8;
+    --color-secondary: #56b7ff;
+    --color-tertiary: #60A4C8;
+    --font-size-very-small: 16px;
+    --font-size-small: 18px;
+    --font-size-buttons: 21px;
+    --font-size-big: 32px;
+    --font-size-titles-small: 24px;
+    --font-size-titles-medium: 62px;
+    --font-size-titles-big: 96px;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: "rethink-sans",sans-serif;
+}
+
+body{
+    background-color: beige;
+}
+
