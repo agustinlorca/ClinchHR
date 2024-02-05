@@ -1,6 +1,27 @@
 @font-face {
-    font-family: "rethink-sans";
+    font-family: "RethinkSans-Bold";
+    src: url('assets/fonts/RethinkSans-Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: "RethinkSans-Medium";
+    src: url('assets/fonts/RethinkSans-Medium.ttf') format('truetype');
+}
+@font-face {
+    font-family: "RethinkSans-ExtraBold";
     src: url('assets/fonts/RethinkSans-ExtraBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "RethinkSans-SemiBold";
+    src: url('assets/fonts/RethinkSans-SemiBold.ttf') format('truetype');
+}
+@font-face {
+    font-family: "RethinkSans-Regular";
+    src: url('assets/fonts/RethinkSans-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: "RethinkSans-SemiBoldItalic";
+    src: url('assets/fonts/RethinkSans-SemiBoldItalic.ttf') format('truetype');
 }
 
 :root{
@@ -20,10 +41,5 @@
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
-    font-family: "rethink-sans",sans-serif;
+    font-family: "RethinkSans-Regular",'Arial Narrow', Arial, sans-serif;
 }
-
-body{
-    background-color: beige;
-}
-

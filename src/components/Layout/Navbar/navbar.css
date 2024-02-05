@@ -1,13 +1,16 @@
 
-nav{
+.navbar{
+    border: none;
     height: 80px;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: white;
+    position: fixed;
+    z-index: 1;
 }
-.logo{
+.navbar .logo{
     margin-left: 16px;
     height: 160px;
     width: 160px;
@@ -27,6 +30,7 @@ nav{
     position: relative;
 }
 .nav-links li a{
+    font-family: "RethinkSans-ExtraBold";
     color: black;
     font-size: var(--font-size-buttons);
     text-decoration: none;
@@ -44,7 +48,9 @@ nav{
     gap: 20px;
     margin-right: 48px;
 }
+
 .btn-contact{
+    font-family: "RethinkSans-ExtraBold";
     border: 1px #328AB8 solid;
     border-radius: 8px;
     font-size: var(--font-size-buttons);
@@ -55,7 +61,11 @@ nav{
     background-color: var(--color-primary);
     cursor: pointer;
 }
+a{
+    text-decoration: none;
+}
 .btn-translate{
+    font-family: "RethinkSans-ExtraBold";
     border: 1px #328AB8 solid;
     border-radius: 8px;
     font-size: var(--font-size-buttons);
@@ -79,7 +89,7 @@ nav{
     margin-right: 2rem;
     display: none;
 }
-@media(max-width: 826px){
+@media(max-width: 850px){
     .nav-menu{
         background-color: white;
         display: flex;
@@ -94,6 +104,7 @@ nav{
         height: 100vh;
         padding: 16px;
         transition: 0.4s ease-in-out;
+        z-index: 1;
     }
     .nav-menu.expanded{
         right: 0px;

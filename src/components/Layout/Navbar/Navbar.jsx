@@ -13,7 +13,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav>
+    <nav className="navbar">
       <Link to="/">
         <img
           src={clinchBlue}
