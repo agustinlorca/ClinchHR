@@ -1,2 +1,2 @@
 export {default as Home} from './Home/Home'
-export {default as Candidatos} from "./Candidatos/Candidatos"
+export {default as Candidates} from "./Candidates/Candidates"

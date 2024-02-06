@@ -1,10 +1,11 @@
 import React from 'react'
 import Layout from '../../components/Layout/Layout'
+import HeroHome from '../../components/Heros/HeroHome/HeroHome'
 
 const Home = () => {
   return (
     <Layout>
-      <h1>INICIO</h1>
+      <HeroHome/>
     </Layout>
   )
 }

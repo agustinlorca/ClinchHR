@@ -1,6 +1,6 @@
 import React from 'react'
 import {createBrowserRouter,RouterProvider} from "react-router-dom"
-import {Home, Candidatos} from '../pages'
+import {Home, Candidates} from '../pages'
 import Login from '../components/Login/Login'
 
 
@@ -15,7 +15,7 @@ const Navigation = () => {
         },
         {
             path: "/candidatos",
-            element: <Candidatos/>,
+            element: <Candidates/>,
         },
         {
             path: "/login",
