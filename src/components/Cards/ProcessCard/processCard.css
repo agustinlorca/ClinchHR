@@ -1,0 +1,116 @@
+.process-card-container {
+  height: 600px;
+  width: 100%;
+  background-image: url("../../../assets/images/process-card.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.process-card {
+  padding: 100px;
+  color: white;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+
+.process-card h1 {
+  font-size: 32px;
+}
+
+.process-card h1 span {
+  font-family: "RethinkSans-ExtraBold";
+  color: var(--color-primary);
+}
+
+.process-card .cards {
+  background-color: rgba(83, 83, 83, 0.5);
+  padding: 30px;
+  border-radius: 16px;
+  font-weight: bold;
+  display: flex;
+}
+.process-card .cards div {
+  text-align: center;
+  max-width: 315px;
+  margin: 20px 40px;
+}
+.process-card .cards hr {
+  border: 3px solid var(--color-primary);
+  border-radius: 4px;
+}
+.process-card .cards div h1 {
+  font-family: "RethinkSans-Bold";
+  height: 70px;
+  margin-bottom: 28px;
+  color: var(--color-primary);
+  font-size: 28px;
+}
+
+.process-card .cards div h1 span {
+  font-family: "RethinkSans-ExtraBold";
+}
+
+.process-card .cards p {
+  font-weight: normal;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .process-card-container {
+    margin-top: 64px;
+    height: 500px;
+    width: 100%;
+  }
+
+  .process-card {
+    padding: 40px;
+    color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .process-card h1 {
+    font-size: 14px;
+  }
+
+  .process-card .cards {
+    background-color: rgba(83, 83, 83, 0.5);
+    margin: 0 30px;
+    padding: 30px;
+    flex-direction: column;
+  }
+  .process-card .cards div {
+    text-align: center;
+    max-width: 200px;
+    margin: 0px;
+  }
+  .process-card .cards hr {
+    border: 1px solid var(--color-primary);
+    margin: 15px 0px;
+  }
+  .process-card .cards div h1 {
+    font-family: "RethinkSans-Bold";
+    height: 30px;
+    margin-bottom: 12px;
+    color: var(--color-primary);
+    font-size: 14px;
+  }
+
+  .process-card .cards div h1 span {
+    font-family: "RethinkSans-ExtraBold";
+  }
+
+  .process-card .cards p {
+    font-weight: normal;
+    font-size: 12px;
+  }
+}
