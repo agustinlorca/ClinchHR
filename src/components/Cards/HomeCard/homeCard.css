@@ -1,0 +1,83 @@
+.home-card-container {
+    display: flex;
+    padding: 117px 48px 244px 48px;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  .home-card {
+    background-color: #fafbff;
+    border-radius: 16px;
+    max-width: 1501px;
+    height: 618px;
+    padding: 48px 128px;
+    display: grid;
+    grid-template-columns: 611px 520px;
+    place-content: center;
+    align-items: center;
+    gap: 70px;
+  }
+  
+  .home-card .text-content h1 {
+    font-size: 46px;
+  }
+  .home-card .text-content h1 span {
+    font-family: "RethinkSans-ExtraBold";
+    color: var(--color-primary);
+  }
+  
+  .home-card .text-content p {
+    font-size: 24px;
+    margin: 48px 0;
+  }
+  .home-card .text-content p span {
+    font-weight: bold;
+    color: var(--color-primary);
+  }
+  
+ 
+  
+  @media screen and (max-width: 767px) {
+    .home-card-container {
+      display: flex;
+      padding: 72px 0;
+      justify-content: center;
+      max-width: 767px;
+    }
+  
+    .home-card {
+      background-color: white;
+      border-radius: 0;
+      width: 100%;
+      height: auto;
+      margin: 0;
+      padding: 0;
+      grid-template-columns: 1fr;
+      gap: 50px;
+    }
+    .home-card .text-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin: 0 40px;
+      padding: 24px;
+      background-color: #fafbff;
+      border-radius: 8px;
+     
+    }
+    .home-card .text-content h1 {
+      font-size: 16px;
+    }
+  
+    .home-card .text-content p {
+      font-size: 10px;
+      margin: 24px 0;
+    }
+    .home-card .text-content p span {
+      font-weight: bold;
+      color: var(--color-primary);
+    }
+ 
+  }
+  
