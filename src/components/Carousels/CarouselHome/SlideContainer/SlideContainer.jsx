@@ -26,7 +26,7 @@ const SlideContainer = () => {
       <div className="slide-bars">
         {
           slides.map((_,index) => (
-            <span className={index === currentSlide ? "active" : ""}></span>
+            <span key={index} className={index === currentSlide ? "active" : ""}></span>
           ))
         }
       </div>

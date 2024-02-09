@@ -1,0 +1,92 @@
+.categories-card-container{
+    display: flex;
+    width: 100%;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+}
+
+.categories-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 64px;
+    background-color: #FAFBFF;
+    border-radius: 16px;
+    padding: 60px;
+}
+.categories-card h1 {
+    text-align: center;
+    font-weight: normal;
+}
+
+.categories-card h1 span{
+    font-family: "RethinkSans-ExtraBold";
+    color: var(--color-primary);
+}
+
+.categories{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 64px;
+}
+.categories div{
+    height: 118px;
+    width: 256px;
+    padding: 32px 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    border: 3px solid var(--color-primary);
+    border-radius: 16px;
+}
+
+.categories div span{
+    font-size: 21px;
+    font-weight: normal;
+}
+
+@media screen and (max-width: 767px) {
+    .categories-card-container{
+        height: 400px;
+    }
+    .categories-card{
+        margin: 0 20px;
+        gap: 24px;
+        border-radius: 8px;
+        padding: 40px;
+    }
+    .categories-card h1 {
+        
+        font-size: 14px;
+    }
+    
+    .categories{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        gap: 16px;
+    }
+    .categories div{
+        height: 64px;
+        width: 128px;
+        padding: 16px 14px;
+        gap: 8px;
+        border: 2px solid var(--color-primary);
+        border-radius: 8px;
+    }
+    .categories div .icon-card{
+        width: 50px;
+        height: 50px;
+       
+    }
+    
+    .categories div span{
+        font-size: 12px;
+        font-weight: bold;
+    }
+    
+}
