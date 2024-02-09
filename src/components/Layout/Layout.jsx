@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "./Navbar/Navbar";
+import Footer from "./Footer/Footer";
 
 const Layout = ({ children }) => {
   return (
@@ -8,6 +9,7 @@ const Layout = ({ children }) => {
       <div style={{ position: "relative", top: "80px" }}>
         {children}
       </div>
+      <Footer/>
     </>
   );
 };

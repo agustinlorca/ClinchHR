@@ -1,0 +1,85 @@
+footer {
+  margin-top: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 60px;
+}
+
+footer .container .logo {
+  display: block;
+  width: 200px;
+  height: 200px;
+}
+
+footer .container ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.linkedin {
+  width: 42px;
+  height: 42px;
+  fill: var(--color-primary);
+}
+.linkedin:hover {
+  fill: rgb(77, 174, 235);
+  transition: 300ms ease-in;
+}
+
+.instagram {
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--color-primary);
+  border-radius: 50%;
+  padding: 5px;
+  background-color: var(--color-primary);
+  fill: white;
+}
+.instagram:hover {
+  background-color: rgb(77, 174, 235);
+  border: 1px solid rgb(77, 174, 235);
+  transition: 300ms ease-in;
+}
+
+.facebook {
+  width: 47px;
+  height: 47px;
+  fill: var(--color-primary);
+}
+.facebook:hover {
+  fill: rgb(77, 174, 235);
+  transition: 300ms ease-in;
+}
+footer .horizontal-rule-top {
+  padding: 0px 50px 0px 80px;
+  margin-bottom: -30px;
+}
+
+footer .horizontal-rule-top hr {
+  border: 1px solid var(--color-primary);
+}
+
+footer .horizontal-rule {
+  margin-top: -30px;
+  padding: 0px 50px 0px 80px;
+}
+
+footer .horizontal-rule hr {
+  border: 1px solid var(--color-primary);
+}
+
+footer .copyright {
+  margin: 20px 0px;
+  text-align: center;
+  font-family: "RethinkSans-SemiBoldItalic";
+}
