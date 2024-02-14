@@ -1,7 +1,7 @@
 import React from "react";
 
 import { Link } from "react-router-dom";
-import clinchBlue from "../../../assets/images/clinch-blue.png";
+import clinchBlue from "../../../assets/images/ClinchLogos/clinch-blue.png";
 import Linkedin from "../../Icons/SocialMedia/Linkedin";
 import Facebook from "../../Icons/SocialMedia/Facebook";
 import Instagram from "../../Icons/SocialMedia/Instagram";
@@ -12,18 +12,18 @@ const Footer = () => {
   const currentYear = currentDate.getFullYear();
   return (
     <footer>
-      <div className="horizontal-rule-top">
-        <hr />
-      </div>
       <div className="container">
-        <Link to="/">
-          <img
-            src={clinchBlue}
-            className="logo"
-            alt="Logo de Clinch"
-            tabIndex="0"
-          />
-        </Link>
+        <div className="logo">
+          <Link to="/">
+            <img
+              src={clinchBlue}
+              className="img-logo"
+              alt="Logo de Clinch"
+              tabIndex="0"
+            />
+          </Link>
+        </div>
+
         <ul>
           <li>
             <Link
@@ -47,9 +47,6 @@ const Footer = () => {
             </Link>
           </li>
         </ul>
-      </div>
-      <div className="horizontal-rule">
-        <hr />
       </div>
       <small className="copyright">
         2014 - {currentYear} Todos los derechos reservados. Hire Clinch

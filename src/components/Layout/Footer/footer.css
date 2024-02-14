@@ -1,5 +1,5 @@
 footer {
-  margin-top: 100px;
+  margin-top: 60px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -9,13 +9,16 @@ footer .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0px 60px;
+  margin: 0px 50px;
+  padding: 20px 10px;
+  border-top: 2px solid var(--color-primary);
+  border-bottom: 2px solid var(--color-primary);
 }
 
-footer .container .logo {
+footer .container .img-logo {
   display: block;
-  width: 200px;
-  height: 200px;
+  width: 120px;
+  height: auto;
 }
 
 footer .container ul {
@@ -60,26 +63,57 @@ footer .container ul {
   fill: rgb(77, 174, 235);
   transition: 300ms ease-in;
 }
-footer .horizontal-rule-top {
-  padding: 0px 50px 0px 80px;
-  margin-bottom: -30px;
-}
-
-footer .horizontal-rule-top hr {
-  border: 1px solid var(--color-primary);
-}
-
-footer .horizontal-rule {
-  margin-top: -30px;
-  padding: 0px 50px 0px 80px;
-}
-
-footer .horizontal-rule hr {
-  border: 1px solid var(--color-primary);
-}
 
 footer .copyright {
   margin: 20px 0px;
   text-align: center;
   font-family: "RethinkSans-SemiBoldItalic";
+}
+
+@media screen and (max-width: 767px) {
+  footer {
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer .container {
+    flex-direction: column;
+    gap: 14px;
+    margin: 0px 50px;
+    padding: 0px 10px;
+    border-top: none;
+    border-bottom: none;
+  }
+  footer .container .logo {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px;
+    border-top: 2px solid var(--color-primary);
+    border-bottom: 2px solid var(--color-primary);
+    width: 100%;
+  }
+  footer .container .img-logo {
+    display: block;
+    width: 100px;
+    height: auto;
+  }
+
+  .linkedin {
+    width: 32px;
+    height: 32px;
+  }
+  .instagram {
+    width: 30px;
+    height: 30px;
+  }
+  .facebook {
+    width: 37px;
+    height: 37px;
+  }
+  footer .copyright {
+    font-size: 9px;
+    margin: 12px 0px;
+  }
 }
