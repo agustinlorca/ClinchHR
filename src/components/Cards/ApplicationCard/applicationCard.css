@@ -1,0 +1,91 @@
+.application-card-container {
+  display: flex;
+  padding: 117px 48px 244px 48px;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.application-card {
+  background-color: #fafbff;
+  border-radius: 16px;
+  max-width: 1501px;
+  height: 618px;
+  padding: 48px 128px;
+  display: grid;
+  grid-template-columns: 611px 520px;
+  place-content: center;
+  align-items: center;
+  gap: 70px;
+}
+
+.application-card .text-content h1 {
+  font-size: 46px;
+}
+.application-card .text-content h1 span {
+  font-family: "RethinkSans-ExtraBold";
+  color: var(--color-primary);
+}
+
+.application-card .text-content p {
+  font-size: 24px;
+  margin: 48px 0;
+}
+.application-card .text-content p span {
+  font-weight: bold;
+  color: var(--color-primary);
+}
+
+.application-card .image-content img {
+  height: auto;
+  width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  .application-card-container {
+    display: flex;
+    padding: 72px 0;
+    justify-content: center;
+    max-width: 767px;
+  }
+
+  .application-card {
+    background-color: white;
+    border-radius: 0;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+  .application-card .text-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 24px;
+    padding: 24px;
+    background-color: #fafbff;
+    border-radius: 8px;
+   
+  }
+  .application-card .text-content h1 {
+    font-size: 16px;
+  }
+
+  .application-card .text-content p {
+    font-size: 10px;
+    margin: 24px 0;
+  }
+  .application-card .text-content p span {
+    font-weight: bold;
+    color: var(--color-primary);
+  }
+  .application-card .image-content {
+    max-height:310px;
+  }
+  .application-card .image-content img {
+    height: auto;
+    width: 100%;
+  }
+}
