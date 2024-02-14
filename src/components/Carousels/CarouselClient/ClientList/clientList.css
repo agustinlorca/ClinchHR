@@ -1,0 +1,29 @@
+.list-clients {
+  height: 220px;
+  padding: 80px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  align-content: center;
+  gap: 60px;
+}
+
+@media screen and (max-width: 1200px) {
+  .list-clients {
+    height: 114px;
+    padding: 40px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .list-clients {
+    height: 57px;
+    padding: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+}

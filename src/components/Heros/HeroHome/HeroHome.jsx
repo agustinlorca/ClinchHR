@@ -1,5 +1,6 @@
 import React from "react";
 import "../hero.css";
+import MathGreater from "../../Icons/MathGreater";
 
 const HeroHome = () => {
   return (
@@ -16,18 +17,7 @@ const HeroHome = () => {
         </p>
         <button>
           Contactar
-          <svg
-            className="math-greater"
-            viewBox="0 0 11 19"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M1.8125 1.8385L9.28646 9.31246L1.8125 16.7864"
-              stroke="white"
-              strokeWidth="2.5625"
-            />
-          </svg>
+          <MathGreater cssClass="math-greater"/>
         </button>
       </div>
     </section>

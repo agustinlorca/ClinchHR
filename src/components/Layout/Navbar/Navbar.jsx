@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-import clinchBlue from "../../../assets/images/clinch-blue.png";
+import clinchBlue from "../../../assets/images/ClinchLogos/clinch-blue.png";
 
 import "./navbar.css";
 import BurgerButton from "./BurgerButton";
@@ -14,38 +14,41 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <Link to="/">
-        <img
-          src={clinchBlue}
-          className="logo"
-          alt="Logo de Clinch"
-          tabIndex="0"
-        />
-      </Link>
-      <div className={isNavExpanded ? 'nav-menu expanded' : 'nav-menu'}>
+      <div className="container-logo">
+        <Link to="/">
+          <img
+            src={clinchBlue}
+            className="logo"
+            alt="Logo de Clinch"
+            tabIndex="0"
+          />
+        </Link>
+      </div>
+
+      <div className={isNavExpanded ? "nav-menu expanded" : "nav-menu"}>
         <ul className="nav-links">
           <li>
-            <NavLink to="/" >Inicio</NavLink>
+            <NavLink to="/">Inicio</NavLink>
           </li>
           <li>
-            <NavLink to="/candidatos" >Candidatos</NavLink>
+            <NavLink to="/candidatos">Candidatos</NavLink>
           </li>
         </ul>
         <div className="nav-buttons">
-          <Link to="/">
-          <button className="btn-contact" >
-            Contáctanos
-          </button>
+          <Link
+            to="https://airtable.com/appk4D8VR2qbX7YkJ/shrjCoz9JbpztBlM7"
+            target="_blank"
+          >
+            <button className="btn-contact">Contáctanos</button>
           </Link>
-          <button className="btn-translate">
-            English
-          </button>
         </div>
       </div>
       <div className="burger-button">
-        <BurgerButton isNavExpanded={isNavExpanded} handleNavExpanded={handleNavExpanded}/>
+        <BurgerButton
+          isNavExpanded={isNavExpanded}
+          handleNavExpanded={handleNavExpanded}
+        />
       </div>
-     
     </nav>
   );
 };
