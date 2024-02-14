@@ -1,0 +1,47 @@
+.carousel-client-container {
+  margin-top: 100px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+.carousel-client {
+  width: 100%;
+  margin: 0px 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.carousel-client h2 {
+  font-family: "RethinkSans-Regular";
+  font-weight: normal;
+  font-size: 32px;
+  text-align: center;
+  margin-top: 48px;
+  margin-bottom: 10px;
+}
+
+.carousel-client h2 span {
+  font-family: "RethinkSans-ExtraBold";
+  color: var(--color-primary);
+}
+
+@media screen and (max-width: 1200px) {
+  .carousel-client-container {
+    margin-top: 80px;
+  }
+  .carousel-client h2 {
+    margin-top: 24px;
+    margin-bottom: 16px;
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .carousel-client-container {
+    margin-top: 40px;
+  }
+  .carousel-client h2 {
+    margin-top: 8px;
+    margin-bottom: 7px;
+    font-size: 12px;
+  }
+}
