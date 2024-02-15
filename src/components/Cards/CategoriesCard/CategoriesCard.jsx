@@ -2,10 +2,10 @@ import React from "react";
 
 import "./categoriesCard.css";
 
-import PaintPallete from "../../Icons/PaintPallete";
-import ShippingFast from "../../Icons/ShippingFast";
+import Design from "../../Icons/Design";
+import Box from "../../Icons/Box";
 import DataDisplay from "../../Icons/DataDisplay";
-import Finance from "../../Icons/Finance";
+import Bank from "../../Icons/Bank";
 
 const CategoriesCard = () => {
   return (
@@ -14,11 +14,11 @@ const CategoriesCard = () => {
         <h1><span>Aplica ahora</span> en las siguientes categorías</h1>
         <div className="categories">
           <div>
-            <ShippingFast width="80px" height="80px" fill="black" className="icon-card"/>
+            <Box width="80px" height="80px" fill="black" className="icon-card"/>
             <span>Comercial & Logística</span>
           </div>
           <div>
-            <PaintPallete  width="80px" height="80px" fill="black" className="icon-card"/>
+            <Design  width="80px" height="80px" fill="black" className="icon-card"/>
             <span> Marketing & Diseño</span>
           </div>
           <div>
@@ -31,7 +31,7 @@ const CategoriesCard = () => {
             <span> Tecnología & Datos</span>
           </div>
           <div>
-            <Finance  width="80px" height="80px" fill="black" className="icon-card"/>
+            <Bank  width="80px" height="80px" fill="black" className="icon-card"/>
             <span> Contabilidad & Finanzas</span>
           </div>
         </div>
