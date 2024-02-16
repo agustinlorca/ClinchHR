@@ -1,6 +1,7 @@
 import React from "react";
 import "../hero.css";
 import MathGreater from "../../Icons/MathGreater";
+import ButtonLink from "../../Buttons/ButtonLink/ButtonLink";
 
 const HeroHome = () => {
   return (
@@ -15,10 +16,12 @@ const HeroHome = () => {
           Búsquedas permanentes abiertas, para presentar candidatos altamente
           calificados en <span>tiempo récord</span>, sin comprometer la calidad.
         </p>
-        <button>
-          Contactar
-          <MathGreater cssClass="math-greater"/>
-        </button>
+        <ButtonLink
+          textButton="Contactar"
+          linkTo="https://calendly.com/julibait/bait-meet"
+        >
+          <MathGreater cssClass="math-greater" />
+        </ButtonLink>
       </div>
     </section>
   );

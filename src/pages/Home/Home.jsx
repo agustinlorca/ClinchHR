@@ -11,9 +11,6 @@ const Home = () => {
       <HeroHome/>
       <ClientContainer/>
       <HomeCard/>
-      <div style={{height:"500px"}}> 
-      </div>
-     
     </Layout>
   )
 }

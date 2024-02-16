@@ -1,5 +1,5 @@
 .carousel-client-container {
-  margin-top: 100px;
+  margin-top: var(--desktop-margin);
   width: 100%;
   height: auto;
   display: flex;
@@ -8,7 +8,7 @@
 .carousel-client {
   width: 100%;
   margin: 0px 40px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
 }
 .carousel-client h2 {
   font-family: "RethinkSans-Regular";
@@ -26,7 +26,7 @@
 
 @media screen and (max-width: 1200px) {
   .carousel-client-container {
-    margin-top: 80px;
+    margin-top: var(--tablet-margin);
   }
   .carousel-client h2 {
     margin-top: 24px;
@@ -37,7 +37,7 @@
 
 @media screen and (max-width: 767px) {
   .carousel-client-container {
-    margin-top: 40px;
+    margin-top: var(--mobile-margin);
   }
   .carousel-client h2 {
     margin-top: 8px;

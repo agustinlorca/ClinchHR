@@ -1,5 +1,5 @@
 footer {
-  margin-top: 60px;
+  margin-top: var(--desktop-margin);
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -72,7 +72,7 @@ footer .copyright {
 
 @media screen and (max-width: 767px) {
   footer {
-    margin-top: 100px;
+    margin-top: var(--mobile-margin);
     width: 100%;
     display: flex;
     flex-direction: column;

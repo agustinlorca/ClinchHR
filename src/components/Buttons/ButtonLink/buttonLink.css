@@ -1,5 +1,6 @@
 
 .button-link a{
+  text-decoration: none;
   display: inline-block;
 }
 
@@ -9,69 +10,46 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 12px;
+  padding: 16px;
+  gap: 8px;
   border: #0083cf;
   border-radius: 6px;
   background-color: #0083cf;
-  width: 230px;
-  height: 64px;
+  min-width: 192px;
+  min-height: 64px;
   color: white;
   font-size: 26px;
 }
 
-@keyframes moveIcon {
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(80%);
-  }
-}
-
-.button-link .math-greater {
-  width: 20px;
-  height: 20px;
-  animation: moveIcon 1.1s linear infinite;
-}
-
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1200px) {
   .button-link button {
-    gap: 12px;
+    padding: 10px;
+    gap: 5px;
     border-radius: 4px;
-    width: 151.5px;
-    height: 40px;
-    font-size: 16px;
-  }
-  .button-link .math-greater {
-    width: 12px;
-    height: 12px;
+    min-width: 128px;
+    min-height: 43px;
+    font-size: 17px;
   }
 }
 
 @media screen and (max-width: 767px) {
   .button-link button {
-    width: 98px;
-    height: 26px;
-    border-radius: 2.57px;
-    font-size: 12px;
+    padding: 8px;
     gap: 4px;
-  }
-  .button-link .math-greater {
-    width: 8.23px;
-    height: 8.23px;
+    border-radius: 3px;
+    min-width: 98px;
+    min-height: 30px;
+    font-size: 12px;
   }
 }
 
 @media screen and (max-width: 300px) {
   .button-link button {
-    width: 49px;
-    height: 13px;
-    border-radius: 1.25px;
-    font-size: 5.3px;
+    padding: 4px;
+    min-width: 49px;
+    min-height: 13px;
+    border-radius: 2px;
+    font-size: 6px;
     gap: 2px;
-  }
-  .button-link .math-greater {
-    width: 4.1px;
-    height: 4.1px;
   }
 }

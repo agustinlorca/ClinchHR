@@ -1,6 +1,7 @@
 .home-card-container {
     display: flex;
-    padding: 117px 48px 244px 48px;
+    margin-top: var(--desktop-margin);
+    /* padding: 117px 48px 244px 48px; */
     justify-content: center;
     overflow: hidden;
   }
@@ -40,8 +41,9 @@
   
   @media screen and (max-width: 767px) {
     .home-card-container {
+      margin-top: var(--mobile-margin);
       display: flex;
-      padding: 72px 0;
+      /* padding: 72px 0; */
       justify-content: center;
       max-width: 767px;
     }
@@ -54,7 +56,8 @@
       margin: 0;
       padding: 0;
       grid-template-columns: 1fr;
-      gap: 50px;
+      gap:0px;
+      /* gap: 50px; */
     }
     .home-card .text-content {
       display: flex;

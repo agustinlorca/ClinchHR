@@ -20,7 +20,7 @@ const HomeCard = () => {
             formar sus equipos diariamente. 
           </p>
           <ButtonLink
-            textButton="Contactar"
+            textButton="Agenda una llamada"
             linkTo="https://calendly.com/julibait/bait-meet"
           />
         </div>

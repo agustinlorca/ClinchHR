@@ -35,6 +35,9 @@
     --font-size-titles-small: 24px;
     --font-size-titles-medium: 62px;
     --font-size-titles-big: 96px;
+    --desktop-margin: 100px;
+    --tablet-margin: 75px;
+    --mobile-margin: 50px;
 }
 
 *{

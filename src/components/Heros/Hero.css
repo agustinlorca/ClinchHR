@@ -52,27 +52,6 @@
   color: var(--color-secondary);
 }
 
-.hero .content button {
-  cursor: pointer;
-  font-family: "RethinkSans-SemiBold";
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 16px;
-  gap: 8px;
-  border: #0083cf;
-  border-radius: 6px;
-  background-color: #0083cf;
-  min-width: 192px;
-  min-height: 64px;
-  color: white;
-  font-size: 26px;
-}
-
-.hero .content a {
-  text-decoration: none;
-  display: inline-block;
-}
 @keyframes moveIcon {
   0% {
     transform: translateX(0%);
@@ -110,22 +89,11 @@
     margin: 16px 0px;
     font-size: 16px;
   }
-
-  .hero .content button {
-    padding: 10px;
-    gap: 5px;
-    border-radius: 4px;
-    min-width: 128px;
-    min-height: 43px;
-    font-size: 17px;
-  }
-
   .math-greater {
     width: 12px;
     height: 12px;
   }
 }
-
 
 @media screen and (max-width: 767px) {
   .hero {
@@ -149,15 +117,6 @@
   .hero .content p {
     margin: 10px 0px;
     font-size: 10px;
-  }
-
-  .hero .content button {
-    padding: 8px;
-    gap: 4px;
-    border-radius: 3px;
-    min-width: 98px;
-    min-height: 30px;
-    font-size: 12px;
   }
 
   .math-greater {
@@ -186,21 +145,11 @@
     font-size: 20px;
   }
   .hero .content p {
-    margin: 6.5px 0px;
+    margin-bottom: 0px;
     font-size: 6.5px;
   }
-
-  .hero .content button {
-    padding: 5px;
-    gap: 3px;
-    border-radius: 2px;
-    min-width: 65px;
-    min-height: 20px;
-    font-size: 8px;
-  }
-
   .math-greater {
-    width: 6.5px;
-    height: 6.5px;
+    width: 5.5px;
+    height: 5.5px;
   }
 }

@@ -1,4 +1,5 @@
 .process-card-container {
+  margin-top: var(--desktop-margin);
   height: 600px;
   width: 100%;
   background-image: url("../../../assets/images/process-card.png");
@@ -62,7 +63,8 @@
 
 @media screen and (max-width: 767px) {
   .process-card-container {
-    margin-top: 64px;
+    margin-top: var(--mobile-margin);
+    /* margin-top: 64px; */
     height: 500px;
     width: 100%;
   }

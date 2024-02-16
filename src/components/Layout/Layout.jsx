@@ -6,7 +6,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <Navbar />
-      <div style={{ position: "relative", top: "80px" }}>
+      <div style={{paddingTop: "80px"}}>
         {children}
       </div>
       <Footer/>

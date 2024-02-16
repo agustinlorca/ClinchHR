@@ -1,7 +1,7 @@
 import React from "react";
 import "../hero.css";
-import { Link } from "react-router-dom";
 import MathGreater from "../../Icons/MathGreater";
+import ButtonLink from "../../Buttons/ButtonLink/ButtonLink";
 const HeroCandidates = () => {
   return (
     <section className="hero candidates">
@@ -16,15 +16,12 @@ const HeroCandidates = () => {
           <span>exclusiva comunidad</span> de talentos y te informaremos sobre
           nuevas oportunidades.
         </p>
-        <Link
-          to="https://airtable.com/appk4D8VR2qbX7YkJ/shrjCoz9JbpztBlM7"
-          target="_blank"
+        <ButtonLink
+          textButton="Aplicar"
+          linkTo="https://airtable.com/appk4D8VR2qbX7YkJ/shrjCoz9JbpztBlM7"
         >
-          <button>
-            Aplicar
-            <MathGreater cssClass="math-greater"/>
-          </button>
-        </Link>
+          <MathGreater cssClass="math-greater" />
+        </ButtonLink>
       </div>
     </section>
   );
