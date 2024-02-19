@@ -11,7 +11,7 @@ const NotFound = () => {
         <div className="error-page">
           <div className="info">
             <h1>
-              Oops! Parece que <br /> te has perdido
+              Algo salió mal
             </h1>
             <p>
               No hemos podido encontrar la página.
@@ -22,7 +22,7 @@ const NotFound = () => {
               <button>Volver al inicio</button>
             </Link>
           </div>
-          <img src={errorSign} />
+          <img src={errorSign}/>
         </div>
       </div>
     </Layout>

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import ClientList from "../ClientList/ClientList";
-import "./ClientContainer.css";
+import "./clientContainer.css";
 import clients from "../clients";
 
 const ClientContainer = () => {
