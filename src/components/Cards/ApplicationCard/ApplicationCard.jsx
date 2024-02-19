@@ -3,6 +3,7 @@ import React from "react";
 import applicationCard from "../../../assets/images/application-card.png";
 import "./applicationCard.css";
 import ButtonLink from "../../Buttons/ButtonLink/ButtonLink";
+import MathGreater from "../../Icons/MathGreater";
 
 const ApplicationCard = () => {
   return (
@@ -23,7 +24,9 @@ const ApplicationCard = () => {
           <ButtonLink
             textButton="Aplicar"
             linkTo="https://airtable.com/appk4D8VR2qbX7YkJ/shrjCoz9JbpztBlM7"
-          />
+          >
+            <MathGreater cssClass="math-greater" />
+          </ButtonLink>
         </div>
         <div className="image-content">
           <img src={applicationCard} alt="Mano escribiendo en un papel" />
