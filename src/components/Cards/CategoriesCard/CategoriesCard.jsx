@@ -11,28 +11,27 @@ const CategoriesCard = () => {
   return (
     <section className="categories-card-container">
       <div className="categories-card">
-        <h1><span>Aplica ahora</span> en las siguientes categorías</h1>
+        <h1>Descubre <span>oportunidades laborales</span> en estas y otras áreas:</h1>
         <div className="categories">
           <div>
-            <Box width="80px" height="80px" fill="black" className="icon-card"/>
-            <span>Comercial & Logística</span>
+            <Box fill="black" className="icon-card"/>
+            <span>Comercial <br/>& Logística</span>
           </div>
           <div>
-            <Design  width="80px" height="80px" fill="black" className="icon-card"/>
-            <span> Marketing & Diseño</span>
+            <Design fill="black" className="icon-card"/>
+            <span> Marketing <br/>& Diseño</span>
           </div>
           <div>
             <DataDisplay
-               width="80px" height="80px"
               fill="none"
               stroke="black"
               className="icon-card"
             />
-            <span> Tecnología & Datos</span>
+            <span> Tecnología <br/>& Datos</span>
           </div>
           <div>
-            <Bank  width="80px" height="80px" fill="black" className="icon-card"/>
-            <span> Contabilidad & Finanzas</span>
+            <Bank fill="black" className="icon-card"/>
+            <span> Contabilidad <br/>& Finanzas</span>
           </div>
         </div>
       </div>

@@ -2,7 +2,7 @@
     margin-top: var(--desktop-margin);
     display: flex;
     width: 100%;
-    /* height: 600px; */
+    padding: 20px 0px;
     justify-content: center;
     align-items: center;
 }
@@ -10,16 +10,19 @@
 .categories-card{
     box-shadow:  0px 0px 14px rgba(204, 216, 255, .6);
     display: flex;
+    width: min(1500px, 90%);
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 64px;
+    gap: 48px;
     background-color: #FAFBFF;
-    border-radius: 16px;
-    padding: 60px;
+    border-radius: 1vw;
+    padding: 120px 40px;
+    
 }
 .categories-card h1 {
     text-align: center;
+    font-size: clamp(22px, 2.7vw, 32px);
     font-weight: normal;
 }
 
@@ -32,38 +35,47 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 64px;
+    gap: 2vw;
 }
 .categories div{
     height: 118px;
     width: 256px;
-    padding: 32px 24px;
+    padding: 24px 14px;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 16px;
+    gap: 1rem;
     border: 3px solid var(--color-primary);
     border-radius: 16px;
 }
-
+.categories div .icon-card{
+    width: 48px;
+    height: auto;
+}
 .categories div span{
-    font-size: 21px;
+    font-size: clamp(14px,1.7vw,21px);
     font-weight: normal;
 }
 
-@media screen and (max-width: 767px) {
+@media (1000px <= width < 1366px){
+  
+    .categories div{
+        max-width: 200px;
+        padding: 20px 10px;
+    }
+}
+
+@media (width < 1000px) {
     .categories-card-container{
         margin-top: var(--mobile-margin);
-        /* height: 400px; */
     }
     .categories-card{
         margin: 0 20px;
         gap: 24px;
         border-radius: 8px;
-        padding: 40px;
+        padding: 10%;
     }
     .categories-card h1 {
-        
         font-size: 14px;
     }
     
@@ -71,24 +83,56 @@
         display: grid;
         grid-template-columns: auto auto;
         grid-template-rows: auto auto;
-        gap: 16px;
+        gap: 2vw;
     }
     .categories div{
         height: 64px;
         width: 128px;
-        padding: 16px 14px;
-        gap: 8px;
+        padding: 0px;
+        gap: 2vw;
         border: 2px solid var(--color-primary);
         border-radius: 8px;
     }
     .categories div .icon-card{
-        width: 50px;
-        height: 50px;
-       
+        width: 24px;
+        height: auto;   
     }
     
     .categories div span{
         font-size: 12px;
+        font-weight: bold;
+    }
+    
+}
+@media (width <= 290px) {
+    .categories-card{
+        margin: 0 20px;
+        gap: 24px;
+        border-radius: 8px;
+        padding: 10%;
+    }
+    .categories-card h1 {
+        font-size: 12px;
+    }
+    
+    .categories{
+        gap: 2vw;
+    }
+    .categories div{
+        height: 53px;
+        width: 106px;
+        padding: 0px;
+        gap: 2vw;
+        border: 2px solid var(--color-primary);
+        border-radius: 8px;
+    }
+    .categories div .icon-card{
+        width: 20px;
+        height: auto;   
+    }
+    
+    .categories div span{
+        font-size: 11px;
         font-weight: bold;
     }
     
