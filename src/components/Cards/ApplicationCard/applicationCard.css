@@ -11,7 +11,7 @@
   border-radius: 16px;
   width: min(1500px, 90%);
   height: auto;
-  padding: 2.5vw 5vw;
+  padding: 2.5vw 4vw;
   display: grid;
   grid-template-columns: 1fr 1fr;
   place-content: center;
@@ -20,7 +20,7 @@
 }
 
 .application-card .text-content h1 {
-  font-size: clamp(16px, 3vw, 46px);
+  font-size: clamp(24px, 3vw, 46px);
 }
 .application-card .text-content h1 span {
   font-family: "RethinkSans-ExtraBold";
@@ -28,8 +28,8 @@
 }
 
 .application-card .text-content p {
-  font-size: clamp(10px, 1.5vw, 26px);
-  margin: 1vw 0;
+  font-size: clamp(16px, 1.5vw, 24px);
+  margin: 1.5vw 0;
 }
 .application-card .text-content p span {
   font-weight: bold;
@@ -52,7 +52,6 @@
     margin-top: var(--mobile-margin);
     padding: 20px 0px;
   }
-
   .application-card {
     box-shadow: none;
     background-color: white;
@@ -69,18 +68,16 @@
     box-shadow: 0px 0px 14px rgba(204, 216, 255, 0.6);
     background-color: #fafbff;
     border-radius: 8px;
-    margin: 0 1rem;
-    padding: 2rem;
+    margin: 0 8vw;
+    padding: 8vw;
     text-align: center;
-
   }
   .application-card .text-content h1 {
-    font-size: clamp(1rem, 0.782rem + 1.7442vw, 2.875rem);
+    font-size: clamp(12px, 4vw, 16px);
   }
-
   .application-card .text-content p {
-    font-size: clamp(0.625rem, 0.5233rem + 0.814vw, 1.5rem);
-    margin: 1.2rem 0 1.2rem .5rem;
+    margin: 3vw 0 3vw 3vw;
+    font-size: clamp(6px, 3vw, 10px);
     text-align: left;
   }
   .application-card .image-content {
@@ -88,7 +85,6 @@
     overflow: hidden;
   }
   .application-card .image-content img {
-    object-fit: scale-;
     padding-left: 0;
     height: auto;
     width: 100%;
