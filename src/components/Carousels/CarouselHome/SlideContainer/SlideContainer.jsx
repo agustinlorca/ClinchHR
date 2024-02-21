@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import SlideList from "../slideList/SlideList";
 import slides from "../slides";
-import "./slideContainer.css"
+import "./slideContainer.css";
 const SlideContainer = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   useEffect(() => {
@@ -24,11 +24,12 @@ const SlideContainer = () => {
   return (
     <div className="slide-container">
       <div className="slide-bars">
-        {
-          slides.map((_,index) => (
-            <span key={index} className={index === currentSlide ? "active" : ""}></span>
-          ))
-        }
+        {slides.map((_, index) => (
+          <span
+            key={index}
+            className={index === currentSlide ? "active" : ""}
+          ></span>
+        ))}
       </div>
       <button className="prev" onClick={handlePrevImage}>
         &#10094;

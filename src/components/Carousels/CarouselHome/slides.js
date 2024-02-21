@@ -21,6 +21,7 @@ const slides = [
     description:
       "El cliente cuenta con un proceso optimizado a medida según sus necesidades.",
   },
+  
 ];
 
 export default slides;

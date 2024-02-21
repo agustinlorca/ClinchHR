@@ -1,87 +1,86 @@
 .home-card-container {
-    display: flex;
-    margin-top: var(--desktop-margin);
-    /* padding: 117px 48px 244px 48px; */
-    justify-content: center;
-    overflow: hidden;
+  margin-top: var(--desktop-margin);
+  display: flex;
+  padding: 20px 0px;
+  justify-content: center;
+}
+
+.home-card {
+  box-shadow: 0px 0px 14px rgba(204, 216, 255, 0.6);
+  background-color: #fafbff;
+  border-radius: 16px;
+  width: min(1500px, 90%);
+  height: auto;
+  padding: 40px 80px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-content: center;
+  align-items: center;
+}
+
+.home-card .text-content h1 {
+  font-size: clamp(24px, 2.8vw, 46px);
+}
+.home-card .text-content h1 span {
+  font-family: "RethinkSans-ExtraBold";
+  color: var(--color-primary);
+}
+
+.home-card .text-content p {
+  font-size: clamp(16px, 1.5vw, 24px);
+  margin: 30px 0;
+}
+.home-card .text-content p span {
+  font-weight: bold;
+  color: var(--color-primary);
+}
+
+.home-card .slider-content {
+  padding-left: 15%;
+}
+
+@media (width < 1000px) {
+  .home-card-container {
+    margin-top: var(--mobile-margin);
+    padding: 20px 0px;
   }
-  
   .home-card {
-    box-shadow:  0px 0px 14px rgba(204, 216, 255, .6);
-    background-color: #fafbff;
-    border-radius: 16px;
-    max-width: 1501px;
-    height: 618px;
-    padding: 48px 128px;
-    display: grid;
-    grid-template-columns: 611px 520px;
+    box-shadow: none;
+    background-color: white;
+    border-radius: none;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    grid-template-columns: 1fr;
     place-content: center;
     align-items: center;
-    gap: 70px;
+    gap: 2rem;
   }
-  
+  .home-card .text-content {
+    box-shadow: 0px 0px 14px rgba(204, 216, 255, 0.6);
+    background-color: #fafbff;
+    border-radius: 8px;
+    margin: 0 8vw;
+    padding: 8vw;
+    text-align: center;
+  }
   .home-card .text-content h1 {
-    font-size: 46px;
+    font-size: clamp(12px, 5vw, 36px);
   }
-  .home-card .text-content h1 span {
-    font-family: "RethinkSans-ExtraBold";
-    color: var(--color-primary);
-  }
-  
+
   .home-card .text-content p {
-    font-size: 24px;
-    margin: 48px 0;
+    margin: 3vw 0 3vw 3vw;
+    font-size: clamp(6px, 3vw, 20px);
+    text-align: left;
   }
   .home-card .text-content p span {
     font-weight: bold;
     color: var(--color-primary);
   }
-  
- 
-  
-  @media screen and (max-width: 767px) {
-    .home-card-container {
-      margin-top: var(--mobile-margin);
-      display: flex;
-      /* padding: 72px 0; */
-      justify-content: center;
-      max-width: 767px;
-    }
-  
-    .home-card {
-      background-color: white;
-      border-radius: 0;
-      width: 100%;
-      height: auto;
-      margin: 0;
-      padding: 0;
-      grid-template-columns: 1fr;
-      gap:0px;
-      /* gap: 50px; */
-    }
-    .home-card .text-content {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      margin: 0 40px;
-      padding: 24px;
-      background-color: #fafbff;
-      border-radius: 8px;
-     
-    }
-    .home-card .text-content h1 {
-      font-size: 16px;
-    }
-  
-    .home-card .text-content p {
-      font-size: 10px;
-      margin: 24px 0;
-    }
-    .home-card .text-content p span {
-      font-weight: bold;
-      color: var(--color-primary);
-    }
- 
+  .home-card .slider-content {
+    width: 100%;
+    padding: 0;
+    height: auto;
   }
-  
+}
+

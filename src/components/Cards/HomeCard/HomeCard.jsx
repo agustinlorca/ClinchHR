@@ -1,8 +1,6 @@
 import React from "react";
-import buildingCardHome from "../../../assets/images/building-card-home.png";
 import "./homeCard.css";
 import ButtonLink from "../../Buttons/ButtonLink/ButtonLink";
-import CarouselHome from "../../Carousels/CarouselHome/CarouselHome";
 import SlideContainer from "../../Carousels/CarouselHome/SlideContainer/SlideContainer";
 
 const HomeCard = () => {
@@ -20,11 +18,11 @@ const HomeCard = () => {
             formar sus equipos diariamente. 
           </p>
           <ButtonLink
-            textButton="Agenda una llamada"
+            textButton="Contáctenos"
             linkTo="https://calendly.com/julibait/bait-meet"
           />
         </div>
-        <div className="image-content">
+        <div className="slider-content">
           <SlideContainer className="slide-container"/>
         </div>
       </div>
