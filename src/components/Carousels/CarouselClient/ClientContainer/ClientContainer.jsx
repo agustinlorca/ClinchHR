@@ -11,7 +11,10 @@ const ClientContainer = () => {
         <h2>
           Empresas que confían en <span>CLINCH</span>
         </h2>
+        <div>
         <ClientList clients={imgClients} />
+        </div>
+        
       </div>
     </section>
   );
