@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import { Link, NavLink } from "react-router-dom";
 import clinchBlue from "../../../assets/images/ClinchLogos/clinch-blue.png";
 
@@ -6,11 +7,16 @@ import "./navbar.css";
 import BurgerButton from "./BurgerButton";
 
 const Navbar = () => {
+  const { pathname } = useLocation();
+
   const [isNavExpanded, setIsNavExpanded] = useState(false);
 
   const handleNavExpanded = () => {
     setIsNavExpanded(!isNavExpanded);
   };
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, [pathname]);
 
   return (
     <nav className="navbar">
@@ -28,7 +34,7 @@ const Navbar = () => {
       <div className={isNavExpanded ? "nav-menu expanded" : "nav-menu"}>
         <ul className="nav-links">
           <li>
-            <NavLink to="/">Inicio</NavLink>
+            <NavLink to="/">Empresa</NavLink>
           </li>
           <li>
             <NavLink to="/candidatos">Candidatos</NavLink>
@@ -36,10 +42,10 @@ const Navbar = () => {
         </ul>
         <div className="nav-buttons">
           <Link
-            to="https://airtable.com/appk4D8VR2qbX7YkJ/shrjCoz9JbpztBlM7"
+            to="https://calendly.com/julibait/bait-meet?month=2024-02"
             target="_blank"
           >
-            <button className="btn-contact">Contáctanos</button>
+            <button className="btn-contact">Contactanos</button>
           </Link>
         </div>
       </div>

@@ -2,6 +2,7 @@ import React from "react";
 import "./homeCard.css";
 import ButtonLink from "../../Buttons/ButtonLink/ButtonLink";
 import SlideContainer from "../../Carousels/CarouselHome/SlideContainer/SlideContainer";
+import MathGreater from "../../Icons/MathGreater";
 import useIntersection from "../../../CustomHooks/useIntersection";
 const HomeCard = () => {
   const [refElement,isIntersecting] = useIntersection({threshold: 0.2,})
@@ -19,9 +20,11 @@ const HomeCard = () => {
             formar sus equipos diariamente. 
           </p>
           <ButtonLink
-            textButton="Contáctenos"
-            linkTo="https://calendly.com/julibait/bait-meet"
-          />
+          textButton="Contactenos"
+          linkTo="https://calendly.com/julibait/bait-meet"
+        >
+          <MathGreater cssClass="math-greater" />
+        </ButtonLink>
         </div>
         <div className="slider-content">
           <SlideContainer className="slide-container"/>

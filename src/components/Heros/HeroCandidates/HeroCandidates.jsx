@@ -1,5 +1,5 @@
 import React from "react";
-import "../hero.css";
+import "../Hero.css";
 import MathGreater from "../../Icons/MathGreater";
 import ButtonLink from "../../Buttons/ButtonLink/ButtonLink";
 const HeroCandidates = () => {
