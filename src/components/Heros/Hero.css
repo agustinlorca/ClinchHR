@@ -28,6 +28,7 @@
   font-family: "RethinkSans-Bold", sans-serif;
   display: block;
   font-size: 80px;
+  animation: fade-in-left 1.2s ease forwards;
 }
 
 .hero .content div span:nth-child(1) {
@@ -45,13 +46,18 @@
   margin: 24px 0px;
   font-size: 24px;
   color: white;
+  opacity: 0;
+  animation: fade-in-right 1.2s ease forwards .8s;
 }
 
 .hero .content p span {
   font-family: "RethinkSans-Medium";
   color: var(--color-secondary);
 }
-
+.hero .content button{
+  opacity: 0;
+  animation: fade-in 1.2s ease forwards 2s;
+}
 @keyframes moveIcon {
   0% {
     transform: translateX(0%);

@@ -2,13 +2,14 @@ import React from "react";
 import "./homeCard.css";
 import ButtonLink from "../../Buttons/ButtonLink/ButtonLink";
 import SlideContainer from "../../Carousels/CarouselHome/SlideContainer/SlideContainer";
-
+import useIntersection from "../../../CustomHooks/useIntersection";
 const HomeCard = () => {
+  const [refElement,isIntersecting] = useIntersection({threshold: 0.2,})
   return (
     <section className="home-card-container">
       <div className="home-card">
         <div className="text-content">
-          <h1>
+          <h1 ref={refElement} style={{animation: isIntersecting ? "slide-in-down-text 900ms ease" : ""}}>
             Bienvenidos a <span>CLINCH</span>
           </h1>
           <p>

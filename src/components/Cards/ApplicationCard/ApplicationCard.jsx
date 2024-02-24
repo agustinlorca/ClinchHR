@@ -4,13 +4,15 @@ import applicationCard from "../../../assets/images/application-card.png";
 import "./applicationCard.css";
 import ButtonLink from "../../Buttons/ButtonLink/ButtonLink";
 import MathGreater from "../../Icons/MathGreater";
+import useIntersection from "../../../CustomHooks/useIntersection";
 
 const ApplicationCard = () => {
+  const [refElement,isIntersecting] = useIntersection({threshold: 0.2,})
   return (
     <section className="application-card-container">
       <div className="application-card">
         <div className="text-content">
-          <h1>
+          <h1 ref={refElement} style={{animation: isIntersecting ? "slide-in-down-text 900ms ease" : ""}} >
             Oportunidades <span>SIN LIMITES</span>
           </h1>
           <p>
