@@ -1,4 +1,88 @@
 .hero {
+  margin: auto;
+  height: auto;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero.home {
+  background-image: url("../../assets/images/hero-home.png");
+}
+.hero.candidates {
+  background-image: url("../../assets/images/hero-candidates.png");
+}
+
+.hero .content {
+  padding: 7% 0% 12% 10%;
+  
+}
+.hero .content div {
+  width: fit-content;
+}
+.hero .content div span {
+  display: block;
+  line-height: 1.1;
+  font-family: "RethinkSans-Bold", sans-serif;
+  font-size: clamp(3rem, 5vw, 6rem);
+  animation: fade-in-left 1.2s ease forwards;
+}
+
+.hero .content div span:nth-child(1) {
+  color: white;
+}
+.hero .content div span:nth-child(2) {
+  color: #60a4c8;
+}
+.hero .content div span:nth-child(3) {
+  color: var(--color-primary);
+}
+
+.hero .content p {
+  width: fit-content;
+  font-family: "RethinkSans-Medium";
+  margin-top: clamp(10px, 2vw, 30px);
+  margin-bottom: clamp(10px, 2vw, 30px);
+  font-size: clamp(1rem, 2vw, 2rem);
+  color: white;
+  opacity: 0;
+  animation: fade-in-right 1.2s ease forwards .8s;
+}
+
+.hero .content p span {
+  font-family: "RethinkSans-Medium";
+  color: var(--color-secondary);
+}
+.hero .content button {
+  background: rgba(0, 131, 207, 0.7);
+  opacity: 0;
+  animation: fade-in 1.2s ease forwards 2s;
+}
+@keyframes moveIcon {
+  0% {
+    transform: translateX(0%);
+  }
+  25% {
+    transform: translateX(25%);
+  }
+  60% {
+    transform: translateX(60%);
+  }
+}
+.math-greater {
+  width: 18px;
+  height: auto;
+  animation: moveIcon 1.2s linear infinite;
+}
+@media (width < 567px) {
+  .hero .content div span {
+    font-size: clamp(1rem, 9vw, 2rem);
+  }
+  .hero .content p {
+    font-size: clamp(0.5rem, 3.5vw, 1rem);
+  }
+}
+/* .hero {
   width: 100%;
   background-size: cover;
   background-position: center;
@@ -71,8 +155,8 @@
   width: 18px;
   height: 18px;
   animation: moveIcon 1.1s linear infinite;
-}
-@media screen and (max-width: 1200px) {
+} */
+/* @media screen and (max-width: 1200px) {
   .hero {
     height: 500px;
   }
@@ -158,4 +242,4 @@
     width: 5.5px;
     height: 5.5px;
   }
-}
+} */

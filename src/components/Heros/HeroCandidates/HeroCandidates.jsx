@@ -1,7 +1,6 @@
 import React from "react";
 import "../Hero.css";
-import MathGreater from "../../Icons/MathGreater";
-import ButtonLink from "../../Buttons/ButtonLink/ButtonLink";
+import ActionButton from "../../Buttons/ActionButton/ActionButton";
 const HeroCandidates = () => {
   return (
     <section className="hero candidates">
@@ -12,16 +11,14 @@ const HeroCandidates = () => {
           <span>Nosotros</span>
         </div>
         <p>
-          Aplica a cientos de trabajos con unos pocos clics. Únete a nuestra{" "}
-          <span>exclusiva comunidad</span> de talentos y te informaremos sobre
+          Aplica a cientos de trabajos con unos pocos clics.<br/> Únete a nuestra{" "}
+          <span>exclusiva comunidad</span> de talentos y te <br/> informaremos sobre
           nuevas oportunidades.
         </p>
-        <ButtonLink
+        <ActionButton
           textButton="Aplicar"
           linkTo="https://airtable.com/appk4D8VR2qbX7YkJ/shrjCoz9JbpztBlM7"
-        >
-          <MathGreater cssClass="math-greater" />
-        </ButtonLink>
+        />
       </div>
     </section>
   );

@@ -1,4 +1,26 @@
+.button-link a {
+  text-decoration: none;
+  display: inline-block;
+}
+.button-link button {
+  font-family: "RethinkSans-SemiBold";
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: clamp(8px, 1.5vw, 16px);
+  padding-bottom: clamp(8px, 1.5vw, 16px);
+  padding-left: clamp(18px, 3vw, 28px);
+  padding-right: clamp(18px, 3vw, 28px);
+  border: none;
+  border-radius: clamp(3px, 1vw, 6px);
+  background-color: #0083cf;
+  font-size: clamp(14px, 2vw, 26px);
+  color: white;
+  gap: clamp(8px, 1vw, 12px);
+}
 
+/* 
 .button-link a{
   text-decoration: none;
   display: inline-block;
@@ -52,4 +74,4 @@
     font-size: 6px;
     gap: 2px;
   }
-}
+} */

@@ -33,18 +33,6 @@
   left: 0px;
 }
 
-.burger-icon:not(.open):hover span:nth-child(1) {
-  transform: rotate(-3deg) scaleY(1.1);
-}
-
-.burger-icon:not(.open):hover span:nth-child(2) {
-  transform: rotate(3deg) scaleY(1.1);
-}
-
-.burger-icon:not(.open):hover span:nth-child(3) {
-  transform: rotate(-4deg) scaleY(1.1);
-}
-
 .burger-icon.open span:nth-child(1) {
   transform: rotate(45deg);
   top: 13px;

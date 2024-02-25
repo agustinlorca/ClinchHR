@@ -1,0 +1,40 @@
+.apply-contact-button {
+  width: fit-content;
+}
+.apply-contact-button a {
+  text-decoration: none;
+}
+.apply-contact-button button {
+  font-family: "RethinkSans-SemiBold";
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: clamp(8px, 1.5vw, 16px);
+  padding-bottom: clamp(8px, 1.5vw, 16px);
+  padding-left: clamp(18px, 3vw, 28px);
+  padding-right: clamp(18px, 3vw, 28px);
+  border: none;
+  border-radius: clamp(3px, 1vw, 6px);
+  background-color: #0083cf;
+  font-size: clamp(14px, 2vw, 26px);
+  color: white;
+  gap: clamp(6px, 2vw, 24px);
+}
+@keyframes moveIcon {
+  0% {
+    transform: translateX(0%);
+  }
+  25% {
+    transform: translateX(25%);
+  }
+  60% {
+    transform: translateX(60%);
+  }
+}
+.apply-contact-button .arrow {
+  margin-top: 1px;
+  width: clamp(7px, 1vw, 12px);
+  height: auto;
+  animation: moveIcon 1.2s linear infinite;
+}
