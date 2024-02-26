@@ -1,6 +1,6 @@
 import React from "react";
 
-const MathGreater = ({ cssClass }) => {
+const Arrow = ({ cssClass }) => {
   return (
     <svg
       className={cssClass}
@@ -17,4 +17,4 @@ const MathGreater = ({ cssClass }) => {
   );
 };
 
-export default MathGreater;
+export default Arrow;

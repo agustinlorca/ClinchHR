@@ -9,7 +9,7 @@ import Bank from "../../Icons/Bank";
 
 import useIntersection from "../../../CustomHooks/useIntersection";
 const CategoriesCard = () => {
-  const [refElement, isIntersecting] = useIntersection({ threshold: 0.6 });
+  const [refElement, isIntersecting] = useIntersection({ threshold: 0.9 });
   return (
     <section className="categories-card-container">
       <div className="categories-card">

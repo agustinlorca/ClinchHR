@@ -10,14 +10,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: clamp(8px, 1.5vw, 16px);
-  padding-bottom: clamp(8px, 1.5vw, 16px);
-  padding-left: clamp(18px, 3vw, 28px);
-  padding-right: clamp(18px, 3vw, 28px);
+  padding-top: clamp(8px, 1.3vw, 16px);
+  padding-bottom: clamp(8px, 1.3vw, 16px);
+  padding-left: clamp(18px, 3vw, 30px);
+  padding-right: clamp(18px, 3vw, 30px);
   border: none;
   border-radius: clamp(3px, 1vw, 6px);
   background-color: #0083cf;
-  font-size: clamp(14px, 2vw, 26px);
+  font-size: clamp(1rem, 1.7vw, 2rem);
   color: white;
   gap: clamp(6px, 2vw, 24px);
 }

@@ -1,8 +1,6 @@
 import React from "react";
 import "./homeCard.css";
-import ButtonLink from "../../Buttons/ButtonLink/ButtonLink";
 import SlideContainer from "../../Carousels/CarouselHome/SlideContainer/SlideContainer";
-import MathGreater from "../../Icons/MathGreater";
 import useIntersection from "../../../CustomHooks/useIntersection";
 import ActionButton from "../../Buttons/ActionButton/ActionButton";
 const HomeCard = () => {

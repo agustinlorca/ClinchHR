@@ -2,8 +2,6 @@ import React from "react";
 
 import applicationCard from "../../../assets/images/application-card.png";
 import "./applicationCard.css";
-import ButtonLink from "../../Buttons/ButtonLink/ButtonLink";
-import MathGreater from "../../Icons/MathGreater";
 import useIntersection from "../../../CustomHooks/useIntersection";
 import ActionButton from "../../Buttons/ActionButton/ActionButton";
 
