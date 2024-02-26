@@ -36,14 +36,11 @@
 }
 
 .application-card .image-content img {
-  padding-left: 3vw;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
+  filter: drop-shadow(0 8px 32px 0 rgba(0, 0, 0, 0.56));
+  margin-left: 3vw;
   height: auto;
   width: 100%;
-}
-
-.math-greater{
-  width: clamp(0.3125rem, 0.2326rem + 0.6395vw, 1rem);
-  height: auto;
 }
 
 @media (width < 1000px) {
@@ -84,11 +81,12 @@
     text-align: left;
   }
   .application-card .image-content {
-    max-height:600px;
+    max-height: 600px;
     overflow: hidden;
   }
   .application-card .image-content img {
-    padding-left: 0;
+    box-shadow: none;
+    margin-left: 0;
     height: auto;
     width: 100%;
   }

@@ -1,4 +1,4 @@
-.slide {
+/* .slide {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -52,4 +52,4 @@
     width: clamp(50px, 16vw, 100px);
     height: auto;
   }
-}
+} */

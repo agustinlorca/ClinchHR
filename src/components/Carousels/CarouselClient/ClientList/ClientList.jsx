@@ -13,7 +13,7 @@ const ClientList = ({ clients }) => {
       <div className="slide-track">
         {clientsList.map((client, index) => (
           <div key={index} className="slide-client">
-            <img src={client} />
+            <img src={client} loading="lazy"/>
           </div>
         ))}
       </div>

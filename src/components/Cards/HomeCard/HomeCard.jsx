@@ -1,8 +1,8 @@
 import React from "react";
 import "./homeCard.css";
-import SlideContainer from "../../Carousels/CarouselHome/SlideContainer/SlideContainer";
 import useIntersection from "../../../CustomHooks/useIntersection";
 import ActionButton from "../../Buttons/ActionButton/ActionButton";
+import CarouselHome from "../../Carousels/NewCarouselHome/CarouselHome";
 const HomeCard = () => {
   const [refElement, isIntersecting] = useIntersection({ threshold: 0.2 });
   return (
@@ -29,7 +29,7 @@ const HomeCard = () => {
           />
         </div>
         <div className="slider-content">
-          <SlideContainer className="slide-container" />
+          <CarouselHome/>
         </div>
       </div>
     </section>
