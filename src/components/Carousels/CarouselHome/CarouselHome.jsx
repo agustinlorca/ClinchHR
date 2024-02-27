@@ -5,23 +5,21 @@ const CarouselHome = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const widthImg = 100 / slidesHome.length;
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      moveToRight();
-    }, 4000);
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     moveToRight();
+  //   }, 4000);
 
-    return () => clearInterval(interval);
-  }, [currentSlide]);
+  //   return () => clearInterval(interval);
+  // }, [currentSlide]);
 
   const moveToRight = () => {
-    setCurrentSlide((prevCounter) =>
-      prevCounter >= slidesHome.length - 1 ? 0 : prevCounter + 1
-    );
+    setCurrentSlide((prevSlide) => (prevSlide + 1) % slidesHome.length);
   };
 
   const moveToLeft = () => {
-    setCurrentSlide((prevCounter) =>
-      prevCounter <= 0 ? slidesHome.length - 1 : prevCounter - 1
+    setCurrentSlide(
+      (prevSlide) => (prevSlide - 1 + slidesHome.length) % slidesHome.length
     );
   };
   return (
@@ -41,14 +39,13 @@ const CarouselHome = () => {
         }}
       >
         {slidesHome.map((slide, index) => (
-          <section key={index} className="slider-section">
-            <div className="individual-slide">
-              <img src={slide.icon} />
+          <section key={index} className="slider-section-home">
+            <div className="slide-home">
+              <img src={slide.icon} alt={slide.altIcon} loading="lazy" title="Designed by Freepik"/>
               <h1>{slide.title}</h1>
               <p>{slide.description}</p>
             </div>
-            <div className="image-overlay"></div>
-            <img src={slide.background} loading="lazy"/>
+            <img src={slide.background} alt={slide.altBackground} loading="lazy" className="img-slide"/>
           </section>
         ))}
       </div>

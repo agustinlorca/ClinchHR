@@ -2,7 +2,7 @@ import React from "react";
 import "./homeCard.css";
 import useIntersection from "../../../CustomHooks/useIntersection";
 import ActionButton from "../../Buttons/ActionButton/ActionButton";
-import CarouselHome from "../../Carousels/NewCarouselHome/CarouselHome";
+import CarouselHome from "../../Carousels/CarouselHome/CarouselHome";
 const HomeCard = () => {
   const [refElement, isIntersecting] = useIntersection({ threshold: 0.2 });
   return (
