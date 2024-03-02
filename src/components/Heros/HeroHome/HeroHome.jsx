@@ -6,11 +6,11 @@ const HeroHome = () => {
   return (
     <section className="hero home">
       <div className="content home">
-        <div>
+        <h1>
           <span>Contratá</span>
           <span>Personal</span>
           <span>Verificado</span>
-        </div>
+        </h1>
         <p>
           Búsquedas permanentes abiertas, para presentar <br/> candidatos altamente
           calificados en <span>tiempo récord</span>,<br/> sin comprometer la calidad.

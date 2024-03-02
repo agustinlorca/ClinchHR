@@ -13,9 +13,9 @@ const CategoriesCard = () => {
   return (
     <section className="categories-card-container">
       <div className="categories-card">
-        <h1>
+        <h3>
           Descubre <span>oportunidades laborales</span> en estas y otras áreas:
-        </h1>
+        </h3>
         <div
           ref={refElement}
           style={{
@@ -26,30 +26,30 @@ const CategoriesCard = () => {
         >
           <div>
             <Box fill="black" className="icon-card" />
-            <span>
+            <h4>
               Comercial <br />& Logística
-            </span>
+            </h4>
           </div>
           <div>
             <Design fill="black" className="icon-card" />
-            <span>
+            <h4>
               {" "}
               Marketing <br />& Diseño
-            </span>
+            </h4>
           </div>
           <div>
             <DataDisplay fill="none" stroke="black" className="icon-card" />
-            <span>
+            <h4>
               {" "}
               Tecnología <br />& Datos
-            </span>
+            </h4>
           </div>
           <div>
             <Bank fill="black" className="icon-card" />
-            <span>
+            <h4>
               {" "}
               Contabilidad <br />& Finanzas
-            </span>
+            </h4>
           </div>
         </div>
       </div>

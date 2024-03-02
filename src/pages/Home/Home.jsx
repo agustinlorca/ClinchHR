@@ -8,8 +8,9 @@ const Home = () => {
   return (
     <Layout>
       <HeroHome/>
-      <ClientContainer/>
       <HomeCard/>
+      <ClientContainer/>
+     
     </Layout>
   )
 }

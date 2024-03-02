@@ -18,10 +18,10 @@
   align-items: center;
 }
 
-.application-card .text-content h1 {
+.application-card .text-content h2 {
   font-size: clamp(24px, 2.8vw, 46px);
 }
-.application-card .text-content h1 span {
+.application-card .text-content h2 span {
   font-family: "RethinkSans-ExtraBold";
   color: var(--color-primary);
 }
@@ -35,12 +35,14 @@
   color: var(--color-primary);
 }
 
-.application-card .image-content img {
+.application-card .image-content picture img {
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
-  filter: drop-shadow(0 8px 32px 0 rgba(0, 0, 0, 0.56));
   margin-left: 3vw;
   height: auto;
   width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: center;
 }
 
 @media (width < 1000px) {
@@ -72,7 +74,7 @@
     padding: 8vw;
     text-align: center;
   }
-  .application-card .text-content h1 {
+  .application-card .text-content h2 {
     font-size: clamp(12px, 5vw, 36px);
   }
   .application-card .text-content p {
@@ -84,7 +86,7 @@
     max-height: 600px;
     overflow: hidden;
   }
-  .application-card .image-content img {
+  .application-card .image-content picture img {
     box-shadow: none;
     margin-left: 0;
     height: auto;

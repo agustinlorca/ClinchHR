@@ -34,7 +34,7 @@ const Navbar = () => {
       <div className={isNavExpanded ? "nav-menu expanded" : "nav-menu"}>
         <ul className="nav-links">
           <li>
-            <NavLink to="/">Empresa</NavLink>
+            <NavLink to="/">Empresas</NavLink>
           </li>
           <li>
             <NavLink to="/candidatos">Candidatos</NavLink>

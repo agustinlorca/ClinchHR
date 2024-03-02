@@ -5,11 +5,11 @@ const HeroCandidates = () => {
   return (
     <section className="hero candidates">
       <div className="content candidates">
-        <div>
+        <h1>
           <span>Trabajá</span>
           <span>Con</span>
           <span>Nosotros</span>
-        </div>
+        </h1>
         <p>
           Aplica a cientos de trabajos con unos pocos clics.<br/> Únete a nuestra{" "}
           <span>exclusiva comunidad</span> de talentos y te <br/> informaremos sobre

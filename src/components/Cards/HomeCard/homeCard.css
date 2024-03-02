@@ -18,10 +18,10 @@
   align-items: center;
 }
 
-.home-card .text-content h1 {
+.home-card .text-content h2 {
   font-size: clamp(24px, 2.8vw, 46px);
 }
-.home-card .text-content h1 span {
+.home-card .text-content h2 span {
   font-family: "RethinkSans-ExtraBold";
   color: var(--color-primary);
 }
@@ -68,7 +68,7 @@
     padding: 8vw;
     
   }
-  .home-card .text-content h1 {
+  .home-card .text-content h2 {
     font-size: clamp(12px, 5vw, 36px);
   }
 

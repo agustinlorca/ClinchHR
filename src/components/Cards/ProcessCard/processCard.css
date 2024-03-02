@@ -1,11 +1,22 @@
 .process-card-container {
+  position: relative;
   margin-top: var(--desktop-margin);
   max-height: 600px;
   width: 100%;
-  background-image: url("../../../assets/images/process-card.png");
-  background-position: center;
+  background-image: url("../../../assets/images/card2.jpg");
+  background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
+  
+}
+.process-card-container:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .process-card {
@@ -18,11 +29,12 @@
   gap: 60px;
 }
 
-.process-card h1 {
+.process-card h3 {
   font-size: clamp(28px,2vw,32px);
+  z-index: 1;
 }
 
-.process-card h1 span {
+.process-card h3 span {
   font-family: "RethinkSans-ExtraBold";
   color: var(--color-primary);
 }
@@ -33,6 +45,7 @@
   border-radius: 16px;
   font-weight: bold;
   display: flex;
+  z-index: 1;
 }
 .process-card .cards div {
   text-align: center;
@@ -43,7 +56,7 @@
   border-radius: 4px;
   margin: 0px 20px;
 }
-.process-card .cards div h1 {
+.process-card .cards div h4 {
   font-family: "RethinkSans-Bold";
   height: auto;
   margin-bottom: 20px;
@@ -51,7 +64,7 @@
   font-size: clamp(22px,1.625vw,26px);
 }
 
-.process-card .cards div h1 span {
+.process-card .cards div h4 span {
   font-family: "RethinkSans-ExtraBold";
 }
 
@@ -77,7 +90,7 @@
     gap: 20px;
   }
 
-  .process-card h1 {
+  .process-card h3 {
     font-size: 14px;
   }
 
@@ -95,18 +108,11 @@
     border: 1px solid var(--color-primary);
     margin: 15px 0px;
   }
-  .process-card .cards div h1 {
-    font-family: "RethinkSans-Bold";
+  .process-card .cards div h4 {
     height: 30px;
     margin-bottom: 12px;
-    color: var(--color-primary);
     font-size: 14px;
   }
-
-  .process-card .cards div h1 span {
-    font-family: "RethinkSans-ExtraBold";
-  }
-
   .process-card .cards p {
     font-weight: normal;
     font-size: 12px;

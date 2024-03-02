@@ -39,7 +39,7 @@
   animation: scroll 30s linear infinite;
   -webkit-animation: scroll 30s linear infinite;
   width: calc(16vw * var(--client-length) * 2);
-  border-bottom: 2px solid rgba(74, 76, 78, 0.2);
+  /* border-bottom: 2px solid rgba(74, 76, 78, 0.2); */
 }
 
 .slider-client .slide-client {

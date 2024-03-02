@@ -2,29 +2,36 @@ import React from "react";
 import "./processCard.css";
 import useIntersection from "../../../CustomHooks/useIntersection";
 const ProcessCard = () => {
-  const [refElement,isIntersecting] = useIntersection({threshold: 0.9})
+  const [refElement, isIntersecting] = useIntersection({ threshold: 0.9 });
   return (
-    <section  className="process-card-container">
+    <section className="process-card-container">
       <div className="process-card">
-        <h1>
+        <h3>
           Formar parte de <span>CLINCH</span> es <span>muy fácil</span>
-        </h1>
-        <div ref={refElement} style={{animation: isIntersecting ? "fade-in 2s ease" : "", opacity: isIntersecting ? "1" : "0"}} className="cards">
+        </h3>
+        <div
+          ref={refElement}
+          style={{
+            animation: isIntersecting ? "fade-in 2s ease" : "",
+            opacity: isIntersecting ? "1" : "0",
+          }}
+          className="cards"
+        >
           <div>
-            <h1>
+            <h4>
               Completa tus datos, <br />
               sube tu CV
-            </h1>
+            </h4>
             <p>
               Déjanos tu información y el puesto donde te gustaría trabajar.
             </p>
           </div>
           <hr />
           <div>
-            <h1>
+            <h4>
               Agenda una <br />
               llamada
-            </h1>
+            </h4>
             <p>
               Concertaremos una llamada para conocerte mejor y completar tu
               perfil profesional.
@@ -32,9 +39,9 @@ const ProcessCard = () => {
           </div>
           <hr />
           <div>
-            <h1>
+            <h4>
               Ahora formas parte de <br /> <span>CLINCH</span>
-            </h1>
+            </h4>
             <p>
               Te informaremos cuando hayan oportunidades acordes a tus
               expectativas.

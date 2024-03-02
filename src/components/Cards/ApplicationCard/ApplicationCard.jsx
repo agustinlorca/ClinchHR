@@ -1,7 +1,10 @@
 import React from "react";
 
-import applicationCard from "../../../assets/images/application-card.png";
+
 import "./applicationCard.css";
+import card1 from "../../../assets/images/card1.jpg";
+import applicationCardJPG from "../../../assets/images/application-card.jpg";
+import applicationCardWEBP from "../../../assets/images/application-card.webp";
 import useIntersection from "../../../CustomHooks/useIntersection";
 import ActionButton from "../../Buttons/ActionButton/ActionButton";
 
@@ -11,14 +14,14 @@ const ApplicationCard = () => {
     <section className="application-card-container">
       <div className="application-card">
         <div className="text-content">
-          <h1
+          <h2
             ref={refElement}
             style={{
               animation: isIntersecting ? "slide-in-down-text 900ms ease" : "",
             }}
           >
             Oportunidades <span>SIN LIMITES</span>
-          </h1>
+          </h2>
           <p>
             Nuestra experiencia y logros se basan en nuestro compromiso por
             apoyarte en tus metas profesionales. Ofrecemos acceso a empleos de
@@ -33,7 +36,10 @@ const ApplicationCard = () => {
           />
         </div>
         <div className="image-content">
-          <img src={applicationCard} alt="Mano escribiendo en un papel" />
+          <picture>
+            <source type="image/webp" srcSet={card1} alt="Mano escribiendo en un papel" />
+            <img src={applicationCardJPG} alt="Mano escribiendo en un papel" />
+          </picture>
         </div>
       </div>
     </section>

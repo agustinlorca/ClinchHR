@@ -20,13 +20,13 @@
     padding: 120px 40px;
     
 }
-.categories-card h1 {
+.categories-card h3 {
     text-align: center;
     font-size: clamp(22px, 2.7vw, 32px);
     font-weight: normal;
 }
 
-.categories-card h1 span{
+.categories-card h3 span{
     font-family: "RethinkSans-ExtraBold";
     color: var(--color-primary);
 }
@@ -52,7 +52,7 @@
     width: 48px;
     height: auto;
 }
-.categories div span{
+.categories div h4{
     font-size: clamp(14px,1.7vw,21px);
     font-weight: normal;
 }
@@ -75,7 +75,7 @@
         border-radius: 8px;
         padding: 10%;
     }
-    .categories-card h1 {
+    .categories-card h3 {
         font-size: 14px;
     }
     
@@ -98,7 +98,7 @@
         height: auto;   
     }
     
-    .categories div span{
+    .categories div h4{
         font-size: 12px;
         font-weight: bold;
     }
@@ -111,7 +111,7 @@
         border-radius: 8px;
         padding: 10%;
     }
-    .categories-card h1 {
+    .categories-card h3 {
         font-size: 12px;
     }
     
@@ -131,7 +131,7 @@
         height: auto;   
     }
     
-    .categories div span{
+    .categories div h4{
         font-size: 11px;
         font-weight: bold;
     }

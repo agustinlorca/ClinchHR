@@ -1,26 +1,37 @@
 .hero {
   margin: auto;
   height: auto;
-  width: min(2560px,100%);
+  width: min(2560px, 100%);
   background-size: cover;
   background-position: center;
 }
-
-.hero.home {
-  background-image: url("../../assets/images/hero-home.png");
+.hero:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
 }
+.hero.home {
+  position: relative;
+  background-image: url("../../assets/images/hero-home.jpg");
+}
+
 .hero.candidates {
-  background-image: url("../../assets/images/hero-candidates.png");
+  position: relative;
+  background-image: url("../../assets/images/hero-candidates.jpg");
+  background-position: top;
 }
 
 .hero .content {
   padding: 7% 0% 12% 10%;
-  
 }
-.hero .content div {
+.hero .content h1 {
   width: fit-content;
 }
-.hero .content div span {
+.hero .content h1 span {
   display: block;
   line-height: 1;
   font-family: "RethinkSans-Bold", sans-serif;
@@ -28,13 +39,13 @@
   animation: fade-in-left 1.2s ease forwards;
 }
 
-.hero .content div span:nth-child(1) {
+.hero .content h1 span:nth-child(1) {
   color: white;
 }
-.hero .content div span:nth-child(2) {
+.hero .content h1 span:nth-child(2) {
   color: #60a4c8;
 }
-.hero .content div span:nth-child(3) {
+.hero .content h1 span:nth-child(3) {
   color: var(--color-primary);
 }
 
@@ -46,7 +57,7 @@
   font-size: clamp(1rem, 1.65vw, 2rem);
   color: white;
   opacity: 0;
-  animation: fade-in-right 1.2s ease forwards .8s;
+  animation: fade-in-right 1.2s ease forwards 0.8s;
 }
 
 .hero .content p span {
@@ -60,7 +71,7 @@
 }
 
 @media (width < 567px) {
-  .hero .content div span {
+  .hero .content h1 span {
     font-size: clamp(1rem, 9vw, 2rem);
   }
   .hero .content p {

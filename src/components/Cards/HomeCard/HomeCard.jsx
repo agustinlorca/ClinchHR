@@ -9,14 +9,14 @@ const HomeCard = () => {
     <section className="home-card-container">
       <div className="home-card">
         <div className="text-content">
-          <h1
+          <h2
             ref={refElement}
             style={{
               animation: isIntersecting ? "slide-in-down-text 900ms ease" : "",
             }}
           >
             Bienvenidos a <span>CLINCH</span>
-          </h1>
+          </h2>
           <p>
             Somos expertos en reclutamiento de alta exigencia. Empresas del
             rubro textil, real estate, ciberseguridad, consumo masivo y retail
