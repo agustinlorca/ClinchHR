@@ -1,0 +1,112 @@
+.experience-card-container {
+  margin-top: var(--desktop-margin);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.experience-card {
+  width: 100%;
+  margin-bottom: 3rem;
+}
+.experience-card h3 {
+  font-weight: normal;
+  text-align: center;
+  font-size: 1.5rem;
+  font-size: clamp(
+    1.5rem,
+    1.0999730893433801rem + 0.6458557588805166vw,
+    1.875rem
+  );
+  margin-bottom: 2rem;
+}
+
+.experience-card h3 span {
+  font-family: "RethinkSans-ExtraBold";
+  color: var(--color-primary);
+}
+.experience-card .card-list-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fafbff;
+}
+.experience-card .card-list {
+  width: min(1500px, 90%);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding: 2rem;
+}
+.experience-card .card-list .card {
+  width: auto;
+  padding: 1.5rem;
+  border-radius: 1vw;
+  background-color: white;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+}
+
+.experience-card .card-list .card img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+.experience-card .card-list .card .info {
+  text-align: left;
+}
+
+.experience-card .card-list .card .info h5 {
+  font-size: 1.125rem;
+  font-size: clamp(
+    1.125rem,
+    0.72497308934338rem + 0.6458557588805166vw,
+    1.5rem
+  );
+}
+.experience-card .card-list .card .info small {
+  font-style: italic;
+  font-size: 0.75rem;
+  font-size: clamp(
+    0.75rem,
+    0.48331539289558667rem + 0.4305705059203444vw,
+    1rem
+  );
+}
+.experience-card .card-list .card .info h6 {
+  font-size: 0.875rem;
+  font-size: clamp(
+    0.875rem,
+    0.47497308934338rem + 0.6458557588805166vw,
+    1.25rem
+  );
+  color: var(--color-primary);
+  margin-top: 0.6vw;
+}
+
+
+@media (width <= 991px) {
+  .experience-card .card-list {
+    background-color: #fafbff;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+  }
+  .experience-card .card-list .card {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 1rem;
+  }
+  .experience-card .card-list .card .info {
+    text-align: center;
+  }
+
+}

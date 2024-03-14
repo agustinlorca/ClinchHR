@@ -74,6 +74,9 @@
   .home-card .text-content h2 {
     font-size: clamp(12px, 5vw, 36px);
   }
+  .home-card .slider-content {
+    padding-left: 0;
+  }
 }
 
 @media(width <= 767px){
