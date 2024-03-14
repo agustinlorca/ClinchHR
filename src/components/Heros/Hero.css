@@ -1,9 +1,9 @@
 .hero {
-  margin: auto;
-  height: auto;
-  width: min(2560px, 100%);
+  width: 100vw;
+  height: 100vh;
   background-size: cover;
-  background-position: center;
+  background-position: center center;
+  background-attachment: fixed;
 }
 .hero:before {
   content: "";
@@ -17,6 +17,7 @@
 .hero.home {
   position: relative;
   background-image: url("../../assets/images/hero-home.jpg");
+  background-color: rgb(4, 50, 87);
 }
 
 .hero.candidates {
@@ -35,7 +36,8 @@
   display: block;
   line-height: 1;
   font-family: "RethinkSans-Bold", sans-serif;
-  font-size: clamp(3rem, 5vw, 6rem);
+  font-size: 4.375rem;
+  font-size: clamp(4.375rem, 3.3579638752052547rem + 1.6420361247947455vw, 5rem);
   animation: fade-in-left 1.2s ease forwards;
 }
 
@@ -50,11 +52,11 @@
 }
 
 .hero .content p {
-  width: fit-content;
   font-family: "RethinkSans-Medium";
-  margin-top: clamp(10px, 1vw, 30px);
-  margin-bottom: clamp(15px, 1.5vw, 40px);
-  font-size: clamp(1rem, 1.65vw, 2rem);
+  max-width: 560px;
+  margin: 2% 0;
+  font-size: 1.25rem;
+  font-size: clamp(1.25rem, 0.9833153928955867rem + 0.4305705059203444vw, 1.5rem);
   color: white;
   opacity: 0;
   animation: fade-in-right 1.2s ease forwards 0.8s;
@@ -70,11 +72,24 @@
   animation: fade-in 1.2s ease forwards 2s;
 }
 
-@media (width < 567px) {
+@media(width <= 991px){
+
+}
+
+@media(width <= 767px){
+
+}
+@media(width <= 480px){
   .hero .content h1 span {
-    font-size: clamp(1rem, 9vw, 2rem);
+    font-size: 2.375rem;
+    font-size: clamp(2.375rem, 2.375rem + 0.4166666666666667vw, 2.5rem);
   }
   .hero .content p {
-    font-size: clamp(0.5rem, 3.5vw, 1rem);
+    width: auto;
+    margin: 3% 8% 5% 0;
+    font-size: 0.75rem;
+    font-size: clamp(0.75rem, 0.75rem + 0.8333333333333334vw, 1rem);
   }
 }
+
+

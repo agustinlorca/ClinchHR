@@ -11,8 +11,8 @@ const HeroCandidates = () => {
           <span>Nosotros</span>
         </h1>
         <p>
-          Aplica a cientos de trabajos con unos pocos clics.<br/> Únete a nuestra{" "}
-          <span>exclusiva comunidad</span> de talentos y te <br/> informaremos sobre
+          Aplica a cientos de trabajos con unos pocos clics. Únete a nuestra{" "}
+          <span>exclusiva comunidad</span> de talentos y te informaremos sobre
           nuevas oportunidades.
         </p>
         <ActionButton

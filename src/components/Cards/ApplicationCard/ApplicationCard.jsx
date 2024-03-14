@@ -37,8 +37,8 @@ const ApplicationCard = () => {
         </div>
         <div className="image-content">
           <picture>
-            <source type="image/webp" srcSet={card1} alt="Mano escribiendo en un papel" />
-            <img src={applicationCardJPG} alt="Mano escribiendo en un papel" />
+            {/* <source type="image/jpg" srcSet={card1} alt="Mano escribiendo en un papel" /> */}
+            <img src={card1} alt="Mano escribiendo en un papel" />
           </picture>
         </div>
       </div>

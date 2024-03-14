@@ -2,7 +2,7 @@ import React from "react";
 import "./processCard.css";
 import useIntersection from "../../../CustomHooks/useIntersection";
 const ProcessCard = () => {
-  const [refElement, isIntersecting] = useIntersection({ threshold: 0.9 });
+  const [refElement, isIntersecting] = useIntersection({ threshold: 0.1 });
   return (
     <section className="process-card-container">
       <div className="process-card">

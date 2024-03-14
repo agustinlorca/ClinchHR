@@ -12,12 +12,13 @@ const HeroHome = () => {
           <span>Verificado</span>
         </h1>
         <p>
-          Búsquedas permanentes abiertas, para presentar <br/> candidatos altamente
-          calificados en <span>tiempo récord</span>,<br/> sin comprometer la calidad.
+          Búsquedas permanentes abiertas, para presentar candidatos altamente
+          calificados en <span>tiempo récord</span>, sin comprometer la calidad.
         </p>
         <ActionButton
           textButton="Contactar"
           linkTo="https://calendly.com/julibait/bait-meet"
+          ariaLabel="Agendar una reunión"
         />
       </div>
     </section>

@@ -1,14 +1,20 @@
-.navbar {
-  border: none;
+.navbar-container{
   height: 80px;
+  display: flex;
   width: 100%;
+  justify-content: center;
+  align-items: flex-end;
+  box-shadow: 0px 5px 5px -5px rgba(82, 82, 82, 0.3);
+  z-index: 3;
+  position: fixed;
+  background-color: white;
+}
+
+.navbar {
+  width: min(1500px,100%);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: white;
-  box-shadow: 0px 2px 4px rgba(82, 82, 82, 0.3);
-  position: fixed;
-  z-index: 2;
 }
 .navbar .container-logo {
   margin-left: 28px;
@@ -84,7 +90,7 @@
   margin-right: 2rem;
   display: none;
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .nav-menu {
     background-color: white;
     display: flex;

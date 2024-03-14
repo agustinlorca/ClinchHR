@@ -93,20 +93,23 @@
   padding-right: clamp(10px, 2vw, 40px);
 }
 
-.slider-section-home .slide-home h1 {
+.slider-section-home .slide-home h4 {
   font-family: "RethinkSans-Bold";
-  font-size: clamp(16px, 2.25vw, 36px);
+  font-size: 1.5rem;
+  font-size: clamp(1.5rem, 0.69994617868676rem + 1.2917115177610332vw, 2.25rem);
 }
 
 .slider-section-home .slide-home p {
-  font-size: clamp(16px, 1.375vw, 22px);
+  font-size: 1rem;
+  font-size: clamp(1rem, 0.46663078579117334rem + 0.8611410118406888vw, 1.5rem);
 }
 
 .slider-section-home .slide-home img {
   width: clamp(70px, 6.25vw, 100px);
   height: auto;
 }
-@media (width < 1000px) {
+
+@media(width <= 991px){
   .container-carousel-home {
     box-shadow: none;
   }
@@ -131,4 +134,11 @@
     width: clamp(50px, 18vw, 100px);
     height: auto;
   }
+}
+
+@media(width <= 767px){
+
+}
+@media(width <= 480px){
+ 
 }
