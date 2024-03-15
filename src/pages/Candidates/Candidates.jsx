@@ -7,6 +7,7 @@ import HeroCandidates from "../../components/Heros/HeroCandidates/HeroCandidates
 import ApplicationCard from "../../components/Cards/ApplicationCard/ApplicationCard";
 import ProcessCard from "../../components/Cards/ProcessCard/ProcessCard";
 import CategoriesCard from "../../components/Cards/CategoriesCard/CategoriesCard";
+import WhatsappButton from "../../components/Buttons/WhatsappButton/WhatsappButton";
 
 const Candidatos = () => {
   return (
@@ -17,6 +18,7 @@ const Candidatos = () => {
         <ProcessCard />
         <CategoriesCard />
       </div>
+      <WhatsappButton/>
     </Layout>
   );
 };

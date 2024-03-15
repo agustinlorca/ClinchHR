@@ -1,6 +1,9 @@
 import React from "react";
 import "./experienceCard.css";
-
+import person1 from "../../../assets/images/Persons/person1.webp"
+import person2 from "../../../assets/images/Persons/person2.webp"
+import person3 from "../../../assets/images/Persons/person3.webp"
+import person4 from "../../../assets/images/Persons/person4.webp"
 const ExperienceCard = () => {
   return (
     <div className="experience-card-container">
@@ -12,9 +15,10 @@ const ExperienceCard = () => {
         <div className="card-list">
           <div className="card">
             <img
-              src="https://this-person-does-not-exist.com/img/avatar-gen11bde92cf1867ce7ba75ede8d9a3fc25.jpg"
+              src={person1}
               width="40px"
               height="40px"
+              alt="Foto de perfil de una persona en la sección de reseñas"
             />
             <div className="info">
               <h5>Sabrina Sánchez</h5>
@@ -30,9 +34,10 @@ const ExperienceCard = () => {
           </div>
           <div className="card">
             <img
-              src="https://this-person-does-not-exist.com/img/avatar-gen11652337f47985d357e2565ae69ec8b8.jpg"
+              src={person3}
               width="40px"
               height="40px"
+              alt="Foto de perfil de una persona en la sección de reseñas"
             />
             <div className="info">
               <h5>Santiago Fernández</h5>
@@ -49,16 +54,17 @@ const ExperienceCard = () => {
           </div>
           <div className="card">
             <img
-              src="https://this-person-does-not-exist.com/img/avatar-gen1128e20f4adfbda8503c1b5788910a3e.jpg"
+              src={person2}
               width="40px"
               height="40px"
+              alt="Foto de perfil de una persona en la sección de reseñas"
             />
             <div className="info">
               <h5>Carolina López</h5>
               <small>
                 Directora de Recursos Humanos en <span>Billabong</span>
               </small>
-              <h6>"EL lugar indicado para buscar personal"</h6>
+              <h6>"El lugar indicado para buscar personal"</h6>
               <p>
                 Desde que incorporamos esta plataforma, hemos agilizado
                 significativamente nuestro proceso de contratación y hemos
@@ -68,9 +74,10 @@ const ExperienceCard = () => {
           </div>
           <div className="card">
             <img
-              src="https://this-person-does-not-exist.com/img/avatar-gen1342b9fa16c8e586b2fa9022839747ab.jpg"
+             src={person4}
               width="40px"
               height="40px"
+              alt="Foto de perfil de una persona en la sección de reseñas"
             />
             <div className="info">
               <h5>Martin Díaz</h5>

@@ -37,7 +37,7 @@
   color: var(--color-primary);
 }
 
-.application-card .image-content picture img {
+.application-card .image-content img {
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
   margin-left: 10%;
   max-height: 500px;
@@ -46,7 +46,6 @@
   aspect-ratio: 1;
   object-fit: cover;
   object-position: left;
-  
 }
 
 
@@ -99,7 +98,7 @@
     max-height: 600px;
     overflow: hidden;
   }
-  .application-card .image-content picture img {
+  .application-card .image-content img {
     box-shadow: none;
     margin-left: 0;
     height: auto;

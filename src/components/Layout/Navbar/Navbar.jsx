@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { Link, NavLink } from "react-router-dom";
-import clinchBlue from "../../../assets/images/ClinchLogos/clinch-blue.png";
 
 import "./navbar.css";
 import BurgerButton from "./BurgerButton";
+import Clinch from "../../Icons/Clinch/Clinch";
 
 const Navbar = () => {
   const { pathname } = useLocation();
@@ -15,6 +15,11 @@ const Navbar = () => {
     setIsNavExpanded(!isNavExpanded);
   };
   useEffect(() => {
+    const titleMap = {
+      '/': 'Empresas',
+      '/candidatos': 'Candidatos',
+    };
+    document.title = titleMap[pathname] || 'Clinch';
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, [pathname]);
 
@@ -22,13 +27,8 @@ const Navbar = () => {
     <div className="navbar-container">
       <nav className="navbar">
         <div className="container-logo">
-          <Link to="/">
-            <img
-              src={clinchBlue}
-              className="logo"
-              alt="Logo de Clinch"
-              tabIndex="0"
-            />
+          <Link to="/" aria-label="Volver a la página principal">
+            <Clinch width="120px" fill="#356ed1" />
           </Link>
         </div>
         <div className={isNavExpanded ? "nav-menu expanded" : "nav-menu"}>

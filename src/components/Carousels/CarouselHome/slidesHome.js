@@ -1,6 +1,6 @@
-import slide1 from "../../../assets/images/slidesHome/slide_1.jpg";
-import slide2 from "../../../assets/images/slidesHome/slide_2.jpg";
-import slide3 from "../../../assets/images/slidesHome/slide_3.jpg";
+import slide1 from "../../../assets/images/slidesHome/slide_1.webp";
+import slide2 from "../../../assets/images/slidesHome/slide_2.webp";
+import slide3 from "../../../assets/images/slidesHome/slide_3.webp";
 
 import riskManagment from "../../../assets/icons/slidesHome/risk-managment.svg";
 import fastTime from "../../../assets/icons/slidesHome/fast-time.svg";

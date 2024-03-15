@@ -1,8 +1,10 @@
 .hero {
-  width: 100vw;
-  height: 100vh;
+  height: auto;
+  width: 100%;
   background-size: cover;
-  background-position: center center;
+  background-position: center;
+  display: flex;
+  justify-content: center;
   background-attachment: fixed;
 }
 .hero:before {
@@ -16,16 +18,18 @@
 }
 .hero.home {
   position: relative;
-  background-image: url("../../assets/images/hero-home.jpg");
+  background-image: url("../../assets/images/Heros/heroHome/hero-home.webp");
   background-color: rgb(4, 50, 87);
 }
 
 .hero.candidates {
   position: relative;
-  background-image: url("../../assets/images/hero-candidates.jpg");
+  background-image: url("../../assets/images/Heros/heroCandidates/hero-candidates.webp");
   background-position: top;
 }
-
+.hero-container{
+  width: min(1550px,100%);
+}
 .hero .content {
   padding: 7% 0% 12% 10%;
 }
@@ -80,6 +84,15 @@
 
 }
 @media(width <= 480px){
+  .hero{
+    background-attachment: local;
+  }
+  .hero.home {
+    background-image: url("../../assets/images/Heros/heroHome/hero-home-480px.webp");
+  }
+  .hero.hero.candidates {
+    background-image: url("../../assets/images/Heros/heroCandidates/hero-candidates-480px.webp");
+  }
   .hero .content h1 span {
     font-size: 2.375rem;
     font-size: clamp(2.375rem, 2.375rem + 0.4166666666666667vw, 2.5rem);

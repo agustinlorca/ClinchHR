@@ -1,9 +1,10 @@
-import React from "react";
+import React from 'react';
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Home, Candidates } from "../pages";
 import NotFound from "../pages/NotFound/NotFound";
 
 const Navigation = () => {
+ 
   const routes = createBrowserRouter([
     {
       path: "/",

@@ -1,5 +1,5 @@
 import React from "react";
-import errorSignJPG from "../../assets/images/error-sign.jpg";
+import errorSign from "../../assets/images/error-sign.webp";
 import "./notFound.css";
 import { Link } from "react-router-dom";
 import Layout from "../../components/Layout/Layout";
@@ -18,7 +18,7 @@ const NotFound = () => {
               <button>Volver al inicio</button>
             </Link>
           </div>
-          <img src={errorSignJPG} alt="Señal de advertencia." />
+          <img src={errorSign} alt="Señal de advertencia." />
         </div>
       </div>
     </Layout>

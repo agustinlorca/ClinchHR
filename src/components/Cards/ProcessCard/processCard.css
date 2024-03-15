@@ -1,10 +1,10 @@
 .process-card-container {
   position: relative;
   margin-top: var(--desktop-margin);
-  max-height: 600px;
   width: 100%;
-  background-image: url("../../../assets/images/card2.jpg");
-  background-position: bottom;
+  background-image: url("../../../assets/images/Cards/processCard/process-card.webp");
+  background-color: black;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -82,6 +82,7 @@
     margin-top: var(--mobile-margin);
     height: auto;
     width: 100%;
+    background-attachment: local;
   }
 
   .process-card {

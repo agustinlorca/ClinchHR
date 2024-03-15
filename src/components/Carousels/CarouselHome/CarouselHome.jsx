@@ -45,6 +45,7 @@ const CarouselHome = () => {
               <h4>{slide.title}</h4>
               <p>{slide.description}</p>
             </div>
+          
             <img src={slide.background} alt={slide.altBackground} loading="lazy" className="img-slide"/>
           </section>
         ))}

@@ -2,9 +2,7 @@ import React from "react";
 
 
 import "./applicationCard.css";
-import card1 from "../../../assets/images/card1.jpg";
-import applicationCardJPG from "../../../assets/images/application-card.jpg";
-import applicationCardWEBP from "../../../assets/images/application-card.webp";
+import cardCandidates from "../../../assets/images/Cards/applicationCard/card-candidates.webp";
 import useIntersection from "../../../CustomHooks/useIntersection";
 import ActionButton from "../../Buttons/ActionButton/ActionButton";
 
@@ -36,10 +34,7 @@ const ApplicationCard = () => {
           />
         </div>
         <div className="image-content">
-          <picture>
-            {/* <source type="image/jpg" srcSet={card1} alt="Mano escribiendo en un papel" /> */}
-            <img src={card1} alt="Mano escribiendo en un papel" />
-          </picture>
+          <img src={cardCandidates} alt="Mano escribiendo en un papel" />
         </div>
       </div>
     </section>

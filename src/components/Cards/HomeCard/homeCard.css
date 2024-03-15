@@ -72,7 +72,7 @@
     
   }
   .home-card .text-content h2 {
-    font-size: clamp(12px, 5vw, 36px);
+    text-align: center;
   }
   .home-card .slider-content {
     padding-left: 0;
