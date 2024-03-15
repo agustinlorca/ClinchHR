@@ -39,7 +39,7 @@
 .hero .content h1 span {
   display: block;
   line-height: 1;
-  font-family: "RethinkSans-Bold", sans-serif;
+  font-weight: bold;
   font-size: 4.375rem;
   font-size: clamp(4.375rem, 3.3579638752052547rem + 1.6420361247947455vw, 5rem);
   animation: fade-in-left 1.2s ease forwards;
@@ -67,7 +67,7 @@
 }
 
 .hero .content p span {
-  font-family: "RethinkSans-Medium";
+  font-weight: bold;
   color: var(--color-secondary);
 }
 .hero .content button {
@@ -75,18 +75,21 @@
   opacity: 0;
   animation: fade-in 1.2s ease forwards 2s;
 }
-
 @media(width <= 991px){
-
-}
-
-@media(width <= 767px){
-
-}
-@media(width <= 480px){
-  .hero{
+  .hero {
     background-attachment: local;
   }
+  .hero .content {
+    padding: 7% 0% 12% 6%;
+  }
+  .hero .content p{
+    width: auto;
+    font-size: 1.375rem;
+    font-size: clamp(1.375rem, 1.1401663405088063rem + 0.7827788649706457vw, 1.625rem);
+  }
+}
+
+@media(width <= 480px){
   .hero.home {
     background-image: url("../../assets/images/Heros/heroHome/hero-home-480px.webp");
   }
@@ -95,13 +98,12 @@
   }
   .hero .content h1 span {
     font-size: 2.375rem;
-    font-size: clamp(2.375rem, 2.375rem + 0.4166666666666667vw, 2.5rem);
+    font-size: clamp(2.375rem, 1rem + 9.166666666666666vw, 3.75rem);
   }
   .hero .content p {
-    width: auto;
     margin: 3% 8% 5% 0;
     font-size: 0.75rem;
-    font-size: clamp(0.75rem, 0.75rem + 0.8333333333333334vw, 1rem);
+    font-size: clamp(0.75rem, 0.25rem + 3.3333333333333335vw, 1.25rem);
   }
 }
 

@@ -5,6 +5,9 @@ import ActionButton from "../../Buttons/ActionButton/ActionButton";
 import CarouselHome from "../../Carousels/CarouselHome/CarouselHome";
 const HomeCard = () => {
   const [refElement, isIntersecting] = useIntersection({ threshold: 0.2 });
+  const isMobile = window.matchMedia("(max-width: 991px)").matches;
+  const animationStyle =
+    isIntersecting && !isMobile ? "slide-in-down-text 900ms ease" : "";
   return (
     <section className="home-card-container">
       <div className="home-card">
@@ -12,7 +15,7 @@ const HomeCard = () => {
           <h2
             ref={refElement}
             style={{
-              animation: isIntersecting ? "slide-in-down-text 900ms ease" : "",
+              animation: animationStyle,
             }}
           >
             Bienvenidos a <span>CLINCH</span>
@@ -29,7 +32,7 @@ const HomeCard = () => {
           />
         </div>
         <div className="slider-content">
-          <CarouselHome/>
+          <CarouselHome />
         </div>
       </div>
     </section>

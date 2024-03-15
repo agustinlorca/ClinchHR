@@ -3,7 +3,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* border-bottom: 2px solid rgba(80, 80, 80, 0.2); */
 }
 .carousel-client {
   width: min(1500px,80%);
@@ -27,13 +26,27 @@
 }
 
 
-@media (width < 1000px) {
+@media (width <= 991px) {
   .carousel-client-container {
-    margin-top: var(--mobile-margin);
+    margin-top: var(--tablet-margin);
   }
   .carousel-client h3 {
     margin-top: 8px;
     margin-bottom: 7px;
-    font-size: clamp(12px,3.5vw,26px);
+    font-size: 1.625rem;
+    font-size: clamp(1.625rem, 1.2727495107632094rem + 1.1741682974559686vw, 2rem);
+  }
+}
+
+@media(width <= 480px) {
+  .carousel-client-container {
+    margin-top: var(--mobile-margin);
+  }
+  .carousel-client h3 {
+    text-align: center;
+    margin-top: 8px;
+    margin-bottom: 7px;
+    font-size: 0.875rem;
+    font-size: clamp(0.875rem, 0.125rem + 5vw, 1.625rem);
   }
 }

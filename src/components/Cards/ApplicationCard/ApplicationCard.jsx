@@ -1,6 +1,5 @@
 import React from "react";
 
-
 import "./applicationCard.css";
 import cardCandidates from "../../../assets/images/Cards/applicationCard/card-candidates.webp";
 import useIntersection from "../../../CustomHooks/useIntersection";
@@ -8,6 +7,10 @@ import ActionButton from "../../Buttons/ActionButton/ActionButton";
 
 const ApplicationCard = () => {
   const [refElement, isIntersecting] = useIntersection({ threshold: 0.2 });
+  const isMobile = window.matchMedia("(max-width: 991px)").matches;
+  const animationStyle =
+    isIntersecting && !isMobile ? "slide-in-down-text 900ms ease" : "";
+
   return (
     <section className="application-card-container">
       <div className="application-card">
@@ -15,7 +18,7 @@ const ApplicationCard = () => {
           <h2
             ref={refElement}
             style={{
-              animation: isIntersecting ? "slide-in-down-text 900ms ease" : "",
+              animation: animationStyle,
             }}
           >
             Oportunidades <span>SIN LIMITES</span>
