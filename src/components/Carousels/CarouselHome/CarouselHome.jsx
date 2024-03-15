@@ -5,13 +5,12 @@ const CarouselHome = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const widthImg = 100 / slidesHome.length;
 
-  // useEffect(() => {
-  //   const interval = setInterval(() => {
-  //     moveToRight();
-  //   }, 4000);
-
-  //   return () => clearInterval(interval);
-  // }, [currentSlide]);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      moveToRight();
+    }, 4000);
+    return () => clearInterval(interval);
+  }, [currentSlide]);
 
   const moveToRight = () => {
     setCurrentSlide((prevSlide) => (prevSlide + 1) % slidesHome.length);
@@ -41,12 +40,22 @@ const CarouselHome = () => {
         {slidesHome.map((slide, index) => (
           <section key={index} className="slider-section-home">
             <div className="slide-home">
-              <img src={slide.icon} alt={slide.altIcon} loading="lazy" title="Designed by Freepik"/>
+              <img
+                src={slide.icon}
+                alt={slide.altIcon}
+                loading="lazy"
+                title="Designed by Freepik"
+              />
               <h4>{slide.title}</h4>
               <p>{slide.description}</p>
             </div>
-          
-            <img src={slide.background} alt={slide.altBackground} loading="lazy" className="img-slide"/>
+
+            <img
+              src={slide.background}
+              alt={slide.altBackground}
+              loading="lazy"
+              className="img-slide"
+            />
           </section>
         ))}
       </div>
