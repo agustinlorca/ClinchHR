@@ -55,6 +55,7 @@
 
 @media(width <= 480px) {
   .apply-contact-button button {
+    border-radius: 1.5vw;
     font-size: 0.75rem;
     font-size: clamp(0.75rem, 0.25rem + 3.3333333333333335vw, 1.25rem);
   }

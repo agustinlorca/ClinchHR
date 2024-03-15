@@ -1,25 +1,38 @@
-import React from 'react';
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import { Home, Candidates } from "../pages";
-import NotFound from "../pages/NotFound/NotFound";
+import { lazy, Suspense } from 'react';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import Loader from '../components/Loader/Loader';
+const Home = lazy(() => import("../pages/Home/Home"));
+const Candidates = lazy(() => import("../pages/Candidates/Candidates"));
+const NotFound = lazy(() => import("../pages/NotFound/NotFound")); // Suponiendo un componente NotFound
+
+const routes = createBrowserRouter([
+  {
+    path: "/",
+    element: (
+      <Suspense fallback={<Loader/>}>
+        <Home />
+      </Suspense>
+    ),
+  },
+  {
+    path: "/candidatos",
+    element: (
+      <Suspense fallback={<Loader/>}>
+        <Candidates />
+      </Suspense>
+    ),
+  },
+  {
+    path: "/*",
+    element: (
+      <Suspense fallback={<Loader/>}>
+        <NotFound />
+      </Suspense>
+    ),
+  },
+]);
 
 const Navigation = () => {
- 
-  const routes = createBrowserRouter([
-    {
-      path: "/",
-      element: <Home />,
-    },
-    {
-      path: "/candidatos",
-      element: <Candidates />,
-    },
-    {
-      path: "/*",
-      element: <NotFound />,
-    },
-  ]);
-
   return <RouterProvider router={routes} />;
 };
 
