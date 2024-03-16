@@ -1,9 +1,10 @@
 import { lazy, Suspense } from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Loader from '../components/Loader/Loader';
+
 const Home = lazy(() => import("../pages/Home/Home"));
 const Candidates = lazy(() => import("../pages/Candidates/Candidates"));
-const NotFound = lazy(() => import("../pages/NotFound/NotFound")); // Suponiendo un componente NotFound
+const NotFound = lazy(() => import("../pages/NotFound/NotFound"));
 
 const routes = createBrowserRouter([
   {
