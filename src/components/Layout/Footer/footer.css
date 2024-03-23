@@ -83,7 +83,7 @@ footer .copyright {
   font-style: italic;
 }
 
-@media screen and (max-width: 767px) {
+@media (width <= 767px) {
   footer {
     margin-top: var(--mobile-margin);
   }
@@ -141,7 +141,8 @@ footer .copyright {
     width: 10px;
   }
   footer .copyright {
-    font-size: 1rem;
+    font-size: 0.625rem;
+font-size: clamp(0.625rem, 0.5111480075901329rem + 0.7590132827324478vw, 0.875rem);
     margin-top: 30px;
     margin-bottom: 10px;
   }
