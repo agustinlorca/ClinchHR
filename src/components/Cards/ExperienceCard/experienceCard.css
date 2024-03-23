@@ -49,12 +49,6 @@
   gap: 1rem;
 }
 
-.experience-card .card-list .card img {
-  border-radius: 50%;
-  width: 100px;
-  height: 100px;
-}
-
 .experience-card .card-list .card .info {
   text-align: left;
 }
@@ -67,15 +61,8 @@
     1.5rem
   );
 }
-.experience-card .card-list .card .info small {
-  font-style: italic;
-  font-size: 0.75rem;
-  font-size: clamp(
-    0.75rem,
-    0.48331539289558667rem + 0.4305705059203444vw,
-    1rem
-  );
-}
+
+
 .experience-card .card-list .card .info h6 {
   font-size: 0.875rem;
   font-size: clamp(

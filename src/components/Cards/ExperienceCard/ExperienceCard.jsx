@@ -1,9 +1,5 @@
 import React from "react";
 import "./experienceCard.css";
-import person1 from "../../../assets/images/Persons/person1.webp"
-import person2 from "../../../assets/images/Persons/person2.webp"
-import person3 from "../../../assets/images/Persons/person3.webp"
-import person4 from "../../../assets/images/Persons/person4.webp"
 const ExperienceCard = () => {
   return (
     <div className="experience-card-container">
@@ -14,17 +10,10 @@ const ExperienceCard = () => {
         <div className="card-list-container">
         <div className="card-list">
           <div className="card">
-            <img
-              src={person1}
-              width="40px"
-              height="40px"
-              alt="Foto de perfil de una persona en la sección de reseñas"
-            />
             <div className="info">
-              <h5>Sabrina Sánchez</h5>
-              <small>
+              <h5>
                 Gerente administrativa de <span>Grupo Alas</span>
-              </small>
+              </h5>
               <h6>"Confiable y sin complicaciones"</h6>
               <p>
                 Llevo usando esta herramienta varios años y ha sido fundamental
@@ -33,17 +22,10 @@ const ExperienceCard = () => {
             </div>
           </div>
           <div className="card">
-            <img
-              src={person3}
-              width="40px"
-              height="40px"
-              alt="Foto de perfil de una persona en la sección de reseñas"
-            />
             <div className="info">
-              <h5>Santiago Fernández</h5>
-              <small>
+              <h5>
                 Gerente de <span>Farmacity</span>
-              </small>
+              </h5>
               <h6>"La manera mas efectiva para encontrar talentos"</h6>
               <p>
                 Me impresiona la calidad de los candidatos que hemos encontrado
@@ -53,17 +35,10 @@ const ExperienceCard = () => {
             </div>
           </div>
           <div className="card">
-            <img
-              src={person2}
-              width="40px"
-              height="40px"
-              alt="Foto de perfil de una persona en la sección de reseñas"
-            />
             <div className="info">
-              <h5>Carolina López</h5>
-              <small>
+              <h5>
                 Directora de Recursos Humanos en <span>Billabong</span>
-              </small>
+              </h5>
               <h6>"El lugar indicado para buscar personal"</h6>
               <p>
                 Desde que incorporamos esta plataforma, hemos agilizado
@@ -73,17 +48,10 @@ const ExperienceCard = () => {
             </div>
           </div>
           <div className="card">
-            <img
-             src={person4}
-              width="40px"
-              height="40px"
-              alt="Foto de perfil de una persona en la sección de reseñas"
-            />
             <div className="info">
-              <h5>Martin Díaz</h5>
-              <small>
+              <h5>
                 Jefe del departamento de personal en <span>Cero es Tres</span>
-              </small>
+              </h5>
               <h6>"Transparente y eficiente"</h6>
               <p>
                 Destaco la transparencia en todo el proceso de reclutamiento.
