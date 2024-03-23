@@ -5,8 +5,7 @@
   text-decoration: none;
 }
 .apply-contact-button button {
-  
-  font-family: "RethinkSans-Bold";
+  font-weight: bold;
   cursor: pointer;
   display: flex;
   justify-content: center;

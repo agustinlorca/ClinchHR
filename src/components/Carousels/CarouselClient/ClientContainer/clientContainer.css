@@ -13,7 +13,6 @@
   gap: min(20px,2vw);
 }
 .carousel-client h3 {
-  font-family: "RethinkSans-Regular";
   font-weight: normal;
   text-align: center;
   font-size: 1.5rem;
@@ -21,7 +20,7 @@
 }
 
 .carousel-client h3 span {
-  font-family: "RethinkSans-ExtraBold";
+  font-weight: 900;
   color: var(--color-primary);
 }
 

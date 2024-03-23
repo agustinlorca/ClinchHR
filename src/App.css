@@ -1,29 +1,7 @@
 @font-face {
-    font-family: "RethinkSans-Bold";
-    src: url('assets/fonts/RethinkSans-Bold.ttf') format('truetype');
+    font-family: "RethinkSans";
+    src: url('assets/fonts/RethinkSans.ttf') format('truetype');
 }
-@font-face {
-    font-family: "RethinkSans-Medium";
-    src: url('assets/fonts/RethinkSans-Medium.ttf') format('truetype');
-}
-@font-face {
-    font-family: "RethinkSans-ExtraBold";
-    src: url('assets/fonts/RethinkSans-ExtraBold.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: "RethinkSans-SemiBold";
-    src: url('assets/fonts/RethinkSans-SemiBold.ttf') format('truetype');
-}
-@font-face {
-    font-family: "RethinkSans-Regular";
-    src: url('assets/fonts/RethinkSans-Regular.ttf') format('truetype');
-}
-@font-face {
-    font-family: "RethinkSans-SemiBoldItalic";
-    src: url('assets/fonts/RethinkSans-SemiBoldItalic.ttf') format('truetype');
-}
-
 :root{
     --color-primary: #328AB8;
     --color-secondary: #56b7ff;
@@ -44,20 +22,5 @@
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
-    font-family: "RethinkSans-Regular",'Arial Narrow', Arial, sans-serif;
-}
-
-
-@media (max-width: 480px) {
-
-}
-
-@media (min-width: 481px) and (max-width: 767px) {
-
-}
-@media (min-width: 768px) and (max-width: 1024px) {
-
-}
-@media (min-width: 1025px) and (max-width: 1280px) {
-
+    font-family: "RethinkSans",'Arial Narrow', Arial, sans-serif;
 }

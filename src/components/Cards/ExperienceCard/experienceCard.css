@@ -23,7 +23,7 @@
 }
 
 .experience-card h3 span {
-  font-family: "RethinkSans-ExtraBold";
+  font-weight: 900;
   color: var(--color-primary);
 }
 .experience-card .card-list-container {

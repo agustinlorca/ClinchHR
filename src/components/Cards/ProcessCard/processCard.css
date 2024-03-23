@@ -41,7 +41,7 @@
 }
 
 .process-card h3 span {
-  font-family: "RethinkSans-ExtraBold";
+  font-weight: 900;
   color: var(--color-primary);
 }
 
@@ -63,7 +63,7 @@
   margin: 0px 20px;
 }
 .process-card .cards div h4 {
-  font-family: "RethinkSans-Bold";
+  font-weight: bold;
   height: auto;
   margin-bottom: 20px;
   color: var(--color-primary);
@@ -76,7 +76,7 @@
 }
 
 .process-card .cards div h4 span {
-  font-family: "RethinkSans-ExtraBold";
+  font-weight: 900;
 }
 
 .process-card .cards p {

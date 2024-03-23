@@ -38,7 +38,7 @@
   display: block;
 }
 .error-page .info button {
-  font-family: "RethinkSans-ExtraBold";
+  font-weight: bold;
   border: 1px #328ab8 solid;
   border-radius: 8px;
   font-size: var(--font-size-buttons);
