@@ -18,7 +18,6 @@ const Candidatos = () => {
         <ProcessCard />
         <CategoriesCard />
       </div>
-      <WhatsappButton/>
     </Layout>
   );
 };
