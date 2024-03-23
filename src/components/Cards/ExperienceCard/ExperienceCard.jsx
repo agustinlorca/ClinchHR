@@ -4,9 +4,9 @@ const ExperienceCard = () => {
   return (
     <div className="experience-card-container">
       <section className="experience-card">
-        <h3>
+        <h4>
           Tu experiencia en <span>CLINCH</span> es importante
-        </h3>
+        </h4>
         <div className="card-list-container">
         <div className="card-list">
           <div className="card">

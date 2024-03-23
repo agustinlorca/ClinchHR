@@ -8,9 +8,9 @@ const ClientContainer = () => {
   return (
     <section className="carousel-client-container">
       <div className="carousel-client">
-        <h3>
+        <h2>
           Empresas que confían en <span>CLINCH</span>
-        </h3>
+        </h2>
         <div>
         <ClientList clients={imgClients} />
         </div>

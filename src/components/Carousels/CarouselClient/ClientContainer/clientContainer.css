@@ -12,14 +12,14 @@
   align-items: center;
   gap: min(20px,2vw);
 }
-.carousel-client h3 {
+.carousel-client h2 {
   font-weight: normal;
   text-align: center;
   font-size: 1.5rem;
   font-size: clamp(1.5rem, 1.0999730893433801rem + 0.6458557588805166vw, 1.875rem);
 }
 
-.carousel-client h3 span {
+.carousel-client h2 span {
   font-weight: 900;
   color: var(--color-primary);
 }
@@ -29,7 +29,7 @@
   .carousel-client-container {
     margin-top: var(--tablet-margin);
   }
-  .carousel-client h3 {
+  .carousel-client h2 {
     margin-top: 8px;
     margin-bottom: 7px;
     font-size: 1.625rem;
@@ -41,7 +41,7 @@
   .carousel-client-container {
     margin-top: var(--mobile-margin);
   }
-  .carousel-client h3 {
+  .carousel-client h2 {
     text-align: center;
     margin-top: 8px;
     margin-bottom: 7px;

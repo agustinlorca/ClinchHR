@@ -11,7 +11,7 @@
   padding: 4rem 0;
   background-color: #fafbff;
 }
-.experience-card h3 {
+.experience-card h4 {
   font-weight: normal;
   text-align: center;
   font-size: 1.5rem;
@@ -22,7 +22,7 @@
   );
 }
 
-.experience-card h3 span {
+.experience-card h4 span {
   font-weight: 900;
   color: var(--color-primary);
 }
@@ -94,7 +94,7 @@
   .experience-card .card-list .card .info {
     text-align: center;
   }
-  .experience-card h3 {
+  .experience-card h4 {
     font-size: 1.625rem;
     font-size: clamp(1.625rem, 1.2727495107632094rem + 1.1741682974559686vw, 2rem);
     margin: 0 4vw 5vw 4vw;
@@ -136,7 +136,7 @@
   .experience-card .card-list .card .info {
     text-align: center;
   }
-  .experience-card h3 {
+  .experience-card h4 {
     font-size: 0.875rem;
     font-size: clamp(0.875rem, 0.125rem + 5vw, 1.625rem);
   }
